@@ -1,7 +1,4 @@
 # My Songs for You
 
-Post Wedding Kawah Putih
-Lirik by Armein Z. R. Langi
-Music: SUNO
+Placeholder
 
-{{< video https://youtu.be/KWthEImJ9mY?si=iUV8Ghhj0R3gKQyZ>}}
