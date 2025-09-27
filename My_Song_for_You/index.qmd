@@ -18,10 +18,10 @@ title: "My Songs for You"
 “Better Steps” saya buat sebagai refleksi perjalanan pribadi menuju langkah yang lebih baik dalam belajar, bekerja, dan berelasi. Lagu ini bercerita tentang proses bertumbuh: mengakui rasa takut, menata pikiran, lalu bergerak pelan tetapi pasti. Pesan utamanya sederhana: kita bisa memilih kata dan tindakan yang membangun pengertian bersama, mulai dari diri sendiri.  
 
 Karya ini selaras dengan pembelajaran di mata kuliah Komunikasi Interpersonal & Publik:  
-- **Self-talk yang sehat** membantu menenangkan diri dan menjaga fokus.  
-- **Pengecekan persepsi** menghindarkan salah paham dan membuat dialog lebih produktif.  
-- **Model transaksional** mengingatkan bahwa komunikasi adalah pertukaran dua arah yang adaptif.  
-- **Prediksi yang memenuhi diri** (visualisasi positif) mendorong kita konsisten melangkah.
+1. **Self-talk yang sehat** membantu menenangkan diri dan menjaga fokus.  
+2.  **Pengecekan persepsi** menghindarkan salah paham dan membuat dialog lebih produktif.  
+3. **Model transaksional** mengingatkan bahwa komunikasi adalah pertukaran dua arah yang adaptif.  
+4. **Prediksi yang memenuhi diri** (visualisasi positif) mendorong kita konsisten melangkah.
 
 Secara teknis, musik digenerasikan dengan **Suno AI** berdasarkan lirik yang saya tulis, dan video disunting dengan **Veo** untuk memperkuat narasi visual. Fokus saya bukan pada teknologinya, melainkan pada pesan yang ingin disampaikan: menjaga harapan, mengambil langkah kecil yang konsisten, dan bertumbuh bersama orang-orang di sekitar.
 
