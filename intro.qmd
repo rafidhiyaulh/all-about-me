@@ -1,0 +1,9 @@
+# Introduction
+
+Website ini dibuat untuk memenuhi tugas mata kuliah **II2100 Komunikasi Interpersonal dan Publik** pada **Program Studi Sistem dan Teknologi Informasi, Sekolah Teknik Elektro dan Informatika – Institut Teknologi Bandung (ITB)**.  
+
+Melalui situs ini, saya mendokumentasikan berbagai pembelajaran, refleksi pribadi, serta karya yang dihasilkan selama perkuliahan. Setiap bagian menggambarkan penerapan konsep komunikasi (seperti kesadaran diri, empati, mendengarkan aktif, hingga komunikasi publik) dalam konteks kehidupan akademik dan profesional.  
+
+Salah satu karya yang disertakan adalah lagu *“Better Steps”*, yang menjadi refleksi pribadi mengenai proses bertumbuh dan belajar untuk berkomunikasi dengan lebih jujur, terbuka, dan penuh empati.  
+
+Tujuan dari pembuatan website ini adalah untuk menunjukkan bahwa komunikasi bukan hanya keterampilan berbicara, tetapi juga seni membangun makna bersama, memahami diri, dan menciptakan hubungan yang lebih bermakna melalui setiap kata dan tindakan.
