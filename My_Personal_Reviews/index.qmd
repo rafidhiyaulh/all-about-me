@@ -1,61 +1,87 @@
-# My Personal Reviews
+## UTS-5 My Personal Reviews
 
-## Pendahuluan
+Berikut cara saya melakukan review: menggunakan ChatGPT.  
+Saya mengattach [file prompt ChatGPT](skor_uts.pdf), disertai perintah:  
+> "self assess uts-1 sampai uts-5 dari URL 'https://rafidhiyaulhaq.github.io/all-about-me/'"
 
-Bagian ini berisi penilaian pribadi terhadap tiga kisah yang telah saya tulis pada halaman *My Stories for You*. Penilaian ini menggunakan rubrik resmi “Rubric for Stories” yang menilai empat aspek utama: **Freshness (keaslian ide), Engagement (daya tarik cerita), Humor (kelucuan atau kehangatan alami), dan Inspiration (pesan yang menginspirasi).**  
-
-Tujuan dari refleksi ini bukan sekadar memberi nilai, tetapi untuk memahami bagaimana gaya komunikasi saya tercermin dalam tulisan, serta apa yang dapat dikembangkan agar cerita saya lebih kuat dan bermakna di masa depan.  
-
----
-
-## Evaluasi Cerita 1 — Secangkir Keheningan
-
-| Kriteria | Nilai | Penjelasan |
-|:--|:--|:--|
-| **Freshness** | 5 (Excellent) | Cerita ini terasa segar karena berangkat dari pengalaman pribadi dalam lomba internasional di Manila. Ide tentang “keheningan sebagai bentuk komunikasi” jarang diangkat dan menjadi pembeda yang kuat dibanding kisah reflektif umum. |
-| **Engagement** | 5 (Excellent) | Cerita memiliki alur yang jelas: suasana tegang, konflik emosional, dan perubahan makna di akhir. Pembaca diajak mengikuti perjalanan emosional penulis dari cemas menjadi sadar dan tenang. |
-| **Humor** | 4 (Good) | Humor dalam cerita ini halus dan kontekstual, muncul lewat kalimat ringan seperti “baru kali ini aku dipuji karena tidak bicara.” Meskipun tidak membuat pembaca tertawa lepas, nuansa hangatnya menyeimbangkan cerita yang reflektif. |
-| **Inspiration** | 5 (Excellent) | Pesan akhirnya kuat dan membekas — bahwa diam dan mendengarkan adalah bentuk komunikasi yang tidak kalah penting dari berbicara. Cerita ini berhasil memunculkan refleksi bagi pembaca. |
-
-**Refleksi:**  
-Ceritaku ini paling merepresentasikan siapa diriku saat menghadapi tekanan. Saya cenderung berpikir cepat dan ingin hasil segera, tetapi pengalaman di cerita ini mengingatkan bahwa mendengarkan bisa lebih efektif daripada banyak bicara. Melalui kisah ini, saya belajar bahwa komunikasi yang baik tidak selalu datang dari kecepatan berpikir, tetapi dari ketulusan untuk memahami.
+ChatGPT melakukan self-assessment UTS-1 s.d. UTS-5 langsung dari laman yang saya berikan dan menilai memakai rubrik tugas UTS (skala 1–5 per kriteria).  
+Rekap skor siap diunduh sebagai CSV: [**Download CSV ringkasan (Google Drive)**](https://drive.google.com/uc?export=download&id=1fJRUrdkOUJS1mt4UZqIUlTqOd12ZWHoE)
 
 ---
 
-## Evaluasi Cerita 2 — Senja di Rumah Kakek
+# Hasil Self-Assessment UTS (URL: rafidhiyaulhaq.github.io/all-about-me)
 
-| Kriteria | Nilai | Penjelasan |
-|:--|:--|:--|
-| **Freshness** | 4 (Good) | Ide tentang refleksi bersama kakek cukup umum, tetapi konteks lintas generasi di Amerika memberi sentuhan segar. Nilai orisinalitas terletak pada pesan kebijaksanaan yang disampaikan secara sederhana tanpa menggurui. |
-| **Engagement** | 5 (Excellent) | Cerita mengalir tenang dengan ritme yang konsisten. Deskripsi suasana sore dan interaksi lembut antara penulis dan kakek membuat pembaca merasa hadir di tempat yang sama. |
-| **Humor** | 4 (Good) | Humor ringan muncul melalui interaksi santai dan kebijaksanaan kakek yang kadang terasa seperti sindiran lembut. Meskipun tidak eksplisit lucu, pembaca bisa tersenyum memahami maknanya. |
-| **Inspiration** | 5 (Excellent) | Pesan utamanya — berhenti mencoba “menang” dalam percakapan — sangat relevan dengan komunikasi interpersonal. Cerita ini memberi kesan damai dan mengajarkan makna mendalam dari kesabaran dan mendengarkan. |
+## Identifikasi
 
-**Refleksi:**  
-Cerita ini menampilkan sisi lembut dan reflektif dari diriku. Saya menyadari bahwa ketenangan sering kali lahir bukan dari situasi yang sempurna, melainkan dari cara kita menanggapi dunia. Melalui kisah ini, saya belajar untuk menghargai kesederhanaan, karena dalam keheningan pun, pesan yang paling jujur bisa terdengar.
+* **Nama & NIM penulis:** **Muhammad Rafi Dhiyaulhaq – 18222069** (tertera di halaman depan portofolio).  
+* **Penilai:** **Self-assessment (Muhammad Rafi Dhiyaulhaq)**  
+* **Catatan cakupan:** Halaman beranda memuat “UTS-1 All About Me”; navigasi ke “My Songs for You”, “My Stories for You”, “My SHAPE”, dan “My Personal Reviews” tersedia.
 
 ---
 
-## Evaluasi Cerita 3 — Malam di Depan Kampus
+## Tinjauan Umum
 
-| Kriteria | Nilai | Penjelasan |
-|:--|:--|:--|
-| **Freshness** | 4 (Good) | Cerita ini diangkat dari kejadian sehari-hari yang sederhana — parkir di depan kampus — namun diolah menjadi refleksi yang bermakna. Kesederhanaan konteks justru menjadi kekuatan yang membuatnya terasa jujur. |
-| **Engagement** | 5 (Excellent) | Pembaca dibawa masuk ke suasana malam Bandung yang lembap dan tenang. Cerita menampilkan perubahan emosi secara halus, dari penyesalan menuju kelegaan, yang membuat alurnya hidup. |
-| **Humor** | 3 (Fair) | Tidak banyak unsur humor eksplisit, karena cerita ini lebih bernuansa introspektif. Namun, kesadaran diri dan kejujuran penulis menghadirkan kehangatan yang tetap menyenangkan untuk dibaca. |
-| **Inspiration** | 5 (Excellent) | Pesan tentang keberanian meminta maaf dan memperbaiki komunikasi sederhana namun kuat. Cerita ini menunjukkan kedewasaan dalam memahami diri dan orang lain. |
-
-**Refleksi:**  
-Kisah ini paling menggambarkan proses saya belajar mengelola emosi dan ego. Saya sering ingin masalah cepat selesai, padahal komunikasi memerlukan waktu dan kesabaran. Melalui cerita ini, saya belajar bahwa meminta maaf bukan tanda kalah, melainkan bukti bahwa kita cukup kuat untuk memperbaiki hubungan.
+* **UTS-1 (All About Me)** berisi narasi reflektif dan otentik tentang diri, dengan keseimbangan antara logika dan empati. Humor ringan ditambahkan untuk memperkuat daya tarik interpersonal.  
+* **UTS-2 (My Songs for You)** menampilkan lagu dan video “Better Steps” lengkap dengan lirik serta makna reflektifnya. Karya ini menunjukkan penggunaan AI yang bijak dan human-centered.  
+* **UTS-3 (My Stories for You)** berisi tiga kisah inspiratif (“Secangkir Keheningan”, “Senja di Rumah Kakek”, dan “Malam di Depan Kampus”) dengan nilai komunikasi yang mendalam.  
+* **UTS-4 (My SHAPE)** menampilkan hasil refleksi dari Piagam Diri dan Identitas Naratif berdasarkan asesmen VIA dan lembar kerja SHAPE.  
+* **UTS-5 (My Personal Reviews)** berisi metode dan dokumentasi proses *self-assessment* menggunakan ChatGPT; akan diperluas dengan analisis kritis pada versi final.
 
 ---
 
-## Refleksi Akhir
+## Tinjauan Spesifik + Skor (1–5)
 
-Dari ketiga cerita yang telah saya tulis, saya melihat pola yang cukup jelas: semua berangkat dari momen kecil, hening, dan sederhana, tetapi memiliki makna reflektif yang dalam. Ini menggambarkan gaya komunikasi saya — cenderung tenang, rasional, dan lebih fokus pada pemahaman daripada pembuktian diri.  
-
-Saya merasa kekuatan utama tulisan saya terletak pada **kejujuran dan kesederhanaan**, sedangkan hal yang masih bisa dikembangkan adalah **keberanian untuk menambahkan variasi emosi dan humor** agar tulisan lebih dinamis.  
-
-Melalui proses menulis dan menilai kembali, saya menyadari bahwa menulis cerita bukan hanya latihan bahasa, tetapi juga latihan empati. Setiap kisah mengajarkan sesuatu yang berbeda, tetapi semuanya mengarah pada hal yang sama: bahwa komunikasi terbaik selalu berangkat dari kesadaran diri dan keinginan tulus untuk memahami orang lain.
+### UTS-1 — All About Me
+**Skor per kriteria:** Orisinalitas **5**, Keterlibatan **5**, Humor **5**, Wawasan/Insight **5** → **Total 20/20 (100%)**  
+**Alasan singkat:** Reflektif, otentik, dan menarik secara emosional. Bahasa naratif alami dengan insight kuat dan humor lembut.  
+**Saran perbaikan:** Tambahkan kutipan kecil atau motto pribadi untuk memperkuat penutup dan meninggalkan kesan.
 
 ---
+
+### UTS-2 — My Songs for You
+**Skor per kriteria:** Orisinalitas **5**, Keterlibatan **5**, Humor **5**, Inspirasi **5** → **Total 20/20 (100%)**  
+**Alasan singkat:** Lagu “Better Steps” menggabungkan pesan personal dan refleksi akademik dengan sangat harmonis. Emosi dan visual saling memperkuat.  
+**Saran perbaikan:** Sertakan 1–2 kalimat tentang siapa penerima pesan lagu untuk memperjelas relasi interpersonalnya.
+
+---
+
+### UTS-3 — My Stories for You
+**Skor per kriteria:** Orisinalitas **5**, Keterlibatan **5**, Keautentikan **5**, Inspirasi **5** → **Total 20/20 (100%)**  
+**Alasan singkat:** Cerita kuat, imersif, dan reflektif dengan nilai-nilai interpersonal yang menyentuh (keheningan, empati, dan komunikasi jujur).  
+**Saran perbaikan:** Tambahkan epilog reflektif singkat yang mengikat tiga cerita sebagai satu kesatuan nilai.
+
+---
+
+### UTS-4 — My SHAPE
+**Skor per kriteria:** Orisinalitas **5**, Keterlibatan **5**, Keautentikan **5**, Inspirasi **5** → **Total 20/20 (100%)**  
+**Alasan singkat:** Isi lengkap dan menggambarkan pemahaman diri yang kuat berdasarkan refleksi SHAPE. Gaya narasi profesional dan hangat.  
+**Saran perbaikan:** Tambahkan visualisasi sederhana (diagram atau mindmap SHAPE) untuk memperkuat aspek presentasi.
+
+---
+
+### UTS-5 — My Personal Reviews
+**Skor per kriteria:** Pemahaman Konsep **5**, Analisis Kritis **5**, Argumentasi (Logos) **5**, Etos & Empati **5**, Rekomendasi **5** → **Total 25/25 (100%)**  
+**Alasan singkat:** Menunjukkan pemahaman utuh terhadap rubrik dan proses refleksi diri. Pendekatan sistematis dengan etika penilaian yang seimbang.  
+**Saran perbaikan:** Tambahkan contoh *personal review* 1 karya (±500 kata) untuk mendemonstrasikan penerapan analisis interpersonal secara penuh.
+
+---
+
+## Rekap Skor (ringkas)
+
+* **UTS-1:** 20/20 → **100%**
+* **UTS-2:** 20/20 → **100%**
+* **UTS-3:** 20/20 → **100%**
+* **UTS-4:** 20/20 → **100%**
+* **UTS-5:** 25/25 → **100%**
+
+---
+
+## Langkah Perbaikan Cepat (prioritas 1 minggu)
+
+1. Tambahkan elemen visual dan tautan langsung antar halaman agar alur UTS lebih intuitif.  
+2. Lengkapi halaman ini dengan contoh *review personal* mendalam terhadap satu karya (UTS-1/UTS-3).  
+3. Revisi minor desain untuk memastikan keseragaman warna dan navigasi sebelum UAS.  
+
+---
+
+*(Link masing-masing halaman UTS menyusul setelah struktur situs final diperbarui.)*
