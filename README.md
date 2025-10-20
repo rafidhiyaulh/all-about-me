@@ -69,10 +69,6 @@ src/
 - **React Router DOM** untuk navigasi
 - **Lucide React** untuk ikon yang ringan
 
-## ✅ Pelestarian Konten
-
-Semua teks, gambar, kutipan, tabel, dan referensi dari Quarto dipindahkan apa adanya. Penyesuaian yang dilakukan hanya pada tampilan (styling, interaksi, dan navigasi) supaya lebih modern dan responsif tanpa mengubah substansi materi.
-
 ---
 
 Repositori ini menjadi arsip digital resmi untuk tugas portfolio II-2100. Silakan gunakan skrip di atas ketika ingin menjalankan atau melakukan build ulang.
