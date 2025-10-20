@@ -3,7 +3,9 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/',
+  // When deploying to GitHub Pages under a repo (username.github.io/repo),
+  // set the base to the repo path so assets are referenced correctly.
+  base: '/all-about-me/',
   build: {
     outDir: 'docs'
   },
