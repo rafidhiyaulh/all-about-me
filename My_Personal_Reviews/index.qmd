@@ -81,5 +81,3 @@ Rekap skor siap diunduh sebagai CSV: [**Download CSV ringkasan (Google Drive)**]
 1. Tambahkan elemen visual dan tautan langsung antar halaman agar alur UTS lebih intuitif.  
 2. Lengkapi halaman ini dengan contoh *review personal* mendalam terhadap satu karya (UTS-1/UTS-3).  
 3. Revisi minor desain untuk memastikan keseragaman warna dan navigasi sebelum UAS.  
-
----
