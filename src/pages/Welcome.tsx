@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { Sparkles, BookOpen, Music } from 'lucide-react'
+import { BookOpen, Music } from 'lucide-react'
 import QuickLinks from '../components/QuickLinks'
 import FeaturedPanel from '../components/FeaturedPanel'
 import HyperText from '../components/HyperText'
@@ -17,14 +17,6 @@ const Welcome: React.FC = () => {
         transition={{ duration: 0.8 }}
         className="mb-6 text-center"
       >
-        <motion.div
-          initial={{ scale: 0 }}
-          animate={{ scale: 1 }}
-          transition={{ delay: 0.2, type: "spring", bounce: 0.4 }}
-          className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-r from-primary-400 to-primary-600 rounded-full mb-4"
-        >
-          <Sparkles className="w-10 h-10 text-white" />
-        </motion.div>
         <HyperText
           as="h1"
           className="mb-4 text-4xl font-bold tracking-tight sm:text-5xl lg:text-7xl"
