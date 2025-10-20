@@ -1,12 +1,16 @@
 import React from 'react'
+import AuroraText from '../components/AuroraText'
 
 const MyReviews: React.FC = () => {
   return (
     <div className="space-y-6 text-neutral-800">
       <div className="mb-6 text-center">
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-primary-700 mb-2">
+        <AuroraText
+          as="h1"
+          className="text-4xl sm:text-5xl md:text-6xl font-bold mb-2"
+        >
           UTS-5 My Personal Reviews
-        </h1>
+        </AuroraText>
       </div>
 
       <div className="glass-effect rounded-xl border border-neutral-200 p-4 mb-4">

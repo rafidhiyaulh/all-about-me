@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Lyrics from '../components/Lyrics'
 import { Youtube, Music, FileText, Wrench } from 'lucide-react'
 import Lens from '../components/Lens'
+import AuroraText from '../components/AuroraText'
 
 const MySongs: React.FC = () => {
   const [open, setOpen] = useState(false)
@@ -9,9 +10,9 @@ const MySongs: React.FC = () => {
     <div className="space-y-6 text-neutral-800">
       {/* Title Section */}
       <div className="mb-6 text-center">
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-primary-700 mb-3">
+        <AuroraText as="h1" className="text-4xl sm:text-5xl md:text-6xl font-bold mb-3">
           UTS-2 My Songs for You
-        </h1>
+        </AuroraText>
         <p className="text-base text-neutral-600 sm:text-lg md:text-xl">
           Better Steps - A Musical Reflection
         </p>

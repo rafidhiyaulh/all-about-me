@@ -93,6 +93,52 @@ html {
   -webkit-backdrop-filter: blur(18px);
 }
 
+.aurora-text {
+  position: relative;
+  display: inline-block;
+  background: linear-gradient(120deg, rgba(24, 24, 27, 0.9), rgba(63, 63, 70, 0.85), rgba(113, 113, 122, 0.9));
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  animation: aurora-sheen 6s ease-in-out infinite;
+}
+
+.aurora-text::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: radial-gradient(circle at 0% 50%, rgba(228, 228, 231, 0.8), transparent 60%), radial-gradient(circle at 100% 50%, rgba(212, 212, 216, 0.8), transparent 55%);
+  opacity: 0.6;
+  filter: blur(32px);
+  animation: aurora-glow 10s ease-in-out infinite;
+}
+
+@keyframes aurora-sheen {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes aurora-glow {
+  0%,
+  100% {
+    transform: translateY(0px);
+    opacity: 0.65;
+  }
+  50% {
+    transform: translateY(-6px);
+    opacity: 0.8;
+  }
+}
+
 /* Better focus states */
 .focus-ring:focus {
   outline: 2px solid #3f3f46;

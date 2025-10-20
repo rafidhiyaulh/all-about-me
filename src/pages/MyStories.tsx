@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import StoryImage from '../components/StoryImage'
+import AuroraText from '../components/AuroraText'
 
 const MyStories: React.FC = () => {
   return (
@@ -11,9 +12,9 @@ const MyStories: React.FC = () => {
         animate={{ opacity: 1, y: 0 }}
   className="text-center mb-6"
       >
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-primary-700 mb-4">
+        <AuroraText as="h1" className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">
           UTS-3 My Stories for You
-        </h1>
+        </AuroraText>
       </motion.div>
 
       {/* Story 1: Secangkir Keheningan */}

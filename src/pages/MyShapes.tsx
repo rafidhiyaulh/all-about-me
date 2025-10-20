@@ -1,12 +1,16 @@
 import React from 'react'
+import AuroraText from '../components/AuroraText'
 
 const MyShapes: React.FC = () => {
   return (
     <div className="space-y-6 text-neutral-800">
       <div className="text-center mb-6">
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-primary-700 mb-4">
+        <AuroraText
+          as="h1"
+          className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4"
+        >
           UTS-4 My SHAPE (Spiritual Gifts, Heart, Abilities, Personality, Experiences)
-        </h1>
+        </AuroraText>
       </div>
 
       <div className="glass-effect rounded-xl border border-neutral-200 p-4 mb-6">

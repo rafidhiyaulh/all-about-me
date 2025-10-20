@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import { Sparkles, BookOpen, Music } from 'lucide-react'
 import QuickLinks from '../components/QuickLinks'
 import FeaturedPanel from '../components/FeaturedPanel'
+import AuroraText from '../components/AuroraText'
 
 const Welcome: React.FC = () => {
   return (
@@ -22,9 +23,12 @@ const Welcome: React.FC = () => {
         >
           <Sparkles className="w-10 h-10 text-white" />
         </motion.div>
-        <h1 className="mb-4 text-4xl font-bold leading-tight bg-gradient-to-r from-primary-700 via-primary-600 to-primary-800 bg-clip-text text-transparent sm:text-5xl lg:text-7xl">
+        <AuroraText
+          as="h1"
+          className="mb-4 text-4xl font-bold tracking-tight sm:text-5xl lg:text-7xl"
+        >
           Selamat Datang
-        </h1>
+        </AuroraText>
         <motion.p 
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
