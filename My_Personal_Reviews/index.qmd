@@ -83,5 +83,3 @@ Rekap skor siap diunduh sebagai CSV: [**Download CSV ringkasan (Google Drive)**]
 3. Revisi minor desain untuk memastikan keseragaman warna dan navigasi sebelum UAS.  
 
 ---
-
-*(Link masing-masing halaman UTS menyusul setelah struktur situs final diperbarui.)*
