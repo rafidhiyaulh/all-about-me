@@ -1,5 +1,36 @@
 # Portfolio Muhammad Rafi Dhiyaulhaq
 
+<<<<<<< HEAD
+Modern React TypeScript portfolio website showcasing personal and academic work.
+
+## Features
+
+- 🎨 Modern, responsive design with Tailwind CSS
+- ⚡ Built with React 18 and TypeScript
+- 🎯 Clean navigation with only Welcome and UTS 1-5 pages
+- 📱 Mobile-first responsive design
+- 🎭 Beautiful animations and transitions
+- 📖 All original content preserved exactly as written
+
+## Content Pages
+
+- **Selamat Datang** - Welcome and introduction
+- **UTS-1 All About Me** - Personal introduction and communication principles
+- **UTS-2 My Songs for You** - "Better Steps" song with lyrics and video
+- **UTS-3 My Stories for You** - Three personal stories with deep communication themes
+- **UTS-4 My SHAPE** - Personal charter and narrative identity
+- **UTS-5 My Personal Reviews** - Self-assessment and review methodology
+
+## Setup Instructions
+
+1. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+````markdown
+# Portfolio Muhammad Rafi Dhiyaulhaq
+
 Modern React TypeScript portfolio website showcasing personal and academic work.
 
 ## Features
@@ -89,3 +120,7 @@ The only changes made were:
 - Adding modern styling with Tailwind CSS
 - Implementing responsive navigation
 - Removing extra sidebar items (keeping only Welcome and UTS 1-5 as requested)
+
+Repositori ini berisi portfolio tugas mata kuliah **Komunikasi Interpersonal dan Publik (II-2100)**.
+
+````
