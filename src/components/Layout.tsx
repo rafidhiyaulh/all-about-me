@@ -4,7 +4,6 @@ import { Home, User, Music, BookOpen, Heart, FileText, Menu, X } from 'lucide-re
 import { AnimatePresence, motion } from 'framer-motion'
 import { cn } from '../lib/utils'
 import ScrollArea from './ScrollArea'
-import ProgressiveBlur from './ProgressiveBlur'
 
 interface LayoutProps {
   children: ReactNode
@@ -163,7 +162,6 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                 <div className="mx-auto w-full max-w-5xl pb-12">
                   {children}
                 </div>
-                <ProgressiveBlur position="bottom" height="28%" />
               </ScrollArea>
             </motion.div>
           </div>
