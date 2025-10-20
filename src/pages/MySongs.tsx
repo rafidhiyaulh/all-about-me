@@ -24,10 +24,7 @@ const MySongs: React.FC = () => {
         </h2>
       </div>
 
-      {/* Video note: use the thumbnail card below to open the player in a modal */}
-      <div className="glass-effect rounded-xl p-4 mb-6 shadow-2xl">
-        <p className="text-lg leading-relaxed mb-0">Klik kartu video di bawah untuk menonton dalam mode pop-up (modal).</p>
-      </div>
+      {/* Video note removed per request */}
 
       {/* About the Work */}
       <div>

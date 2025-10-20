@@ -10,7 +10,7 @@ import MyReviews from './pages/MyReviews'
 
 function App() {
   return (
-    <Router>
+    <Router basename="/all-about-me">
       <Layout>
         <Routes>
           <Route path="/" element={<Welcome />} />

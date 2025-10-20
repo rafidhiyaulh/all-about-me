@@ -18,7 +18,7 @@ const AboutMe: React.FC = () => {
       {/* Profile Image */}
   <div className="text-center mb-6">
         <img 
-          src="/images/rafi.jpg" 
+          src="/all-about-me/images/rafi.jpg" 
           alt="About Me" 
           className="w-full max-w-2xl mx-auto rounded-2xl shadow-2xl"
         />

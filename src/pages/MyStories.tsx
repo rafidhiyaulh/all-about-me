@@ -29,7 +29,7 @@ const MyStories: React.FC = () => {
         </h2>
         
         <StoryImage
-          src="/images/secangkir-keheningan.jpg"
+          src="/all-about-me/images/secangkir-keheningan.jpg"
           alt="Secangkir Keheningan"
           caption="Manila, 2025 — momen keheningan yang menyatukan tim di tengah kompetisi."
         />
@@ -74,7 +74,7 @@ const MyStories: React.FC = () => {
         </h2>
         
         <StoryImage
-          src="/images/senja-di-rumah-kakek.jpg"
+          src="/all-about-me/images/senja-di-rumah-kakek.jpg"
           alt="Senja di Rumah Kakek"
           caption="Amerika, 2024 — sore tenang di halaman rumah kakek yang mengajarkan arti mendengarkan dengan sabar."
         />
@@ -127,7 +127,7 @@ const MyStories: React.FC = () => {
         </h2>
         
         <StoryImage
-          src="/images/malam-di-depan-kampus.jpg"
+          src="/all-about-me/images/malam-di-depan-kampus.jpg"
           alt="Malam di Depan Kampus"
           caption="Bandung, 2025 — malam yang lembap di depan kampus menjadi ruang refleksi tentang arti komunikasi yang jujur."
         />
