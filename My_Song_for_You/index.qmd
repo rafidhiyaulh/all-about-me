@@ -1,9 +1,12 @@
 ---
 title: "UTS-2 My Songs for You"
+subtitle: "Better Steps - A Musical Reflection"
 ---
 
-## Better Steps — Lagu & Video
+::: {.song-header data-aos="fade-up"}
+## 🎵 Better Steps — Lagu & Video
 
+::: {.video-container .section data-aos="slide-up"}
 <iframe width="100%" height="415"
   src="https://www.youtube.com/embed/8LhuFTK2nAU"
   title="My Songs for You: Better Steps | Muhammad Rafi Dhiyaulhaq - 18222069"
@@ -11,65 +14,95 @@ title: "UTS-2 My Songs for You"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
   allowfullscreen>
 </iframe>
+:::
 
-### Tentang Karya
+### 🎭 Tentang Karya
 
-“Better Steps” saya buat sebagai refleksi perjalanan pribadi menuju langkah yang lebih baik dalam belajar, bekerja, dan berelasi. Lagu ini bercerita tentang proses bertumbuh: mengakui rasa takut, menata pikiran, lalu bergerak pelan tetapi pasti. Pesan utamanya sederhana: kita bisa memilih kata dan tindakan yang membangun pengertian bersama, mulai dari diri sendiri.  
+::: {.artwork-description .section data-aos="fade-in"}
+"Better Steps" saya buat sebagai refleksi perjalanan pribadi menuju langkah yang lebih baik dalam belajar, bekerja, dan berelasi. Lagu ini bercerita tentang proses bertumbuh: mengakui rasa takut, menata pikiran, lalu bergerak pelan tetapi pasti. Pesan utamanya sederhana: kita bisa memilih kata dan tindakan yang membangun pengertian bersama, mulai dari diri sendiri.
+:::
 
+::: {.learning-connection .highlight-box data-aos="slide-up"}
 Karya ini selaras dengan pembelajaran di mata kuliah **Komunikasi Interpersonal & Publik**, di mana saya belajar bahwa:  
-1. **Self-talk yang sehat** membantu menenangkan diri dan menjaga fokus.  
-2. **Pengecekan persepsi** menghindarkan salah paham dan membuat dialog lebih produktif.  
-3. **Model transaksional** mengingatkan bahwa komunikasi adalah pertukaran dua arah yang adaptif.  
-4. **Prediksi yang memenuhi diri** (visualisasi positif) mendorong kita konsisten melangkah.
+
+1. **Self-talk yang sehat** membantu menenangkan diri dan menjaga fokus
+2. **Pengecekan persepsi** menghindarkan salah paham dan membuat dialog lebih produktif
+3. **Model transaksional** mengingatkan bahwa komunikasi adalah pertukaran dua arah yang adaptif
+4. **Prediksi yang memenuhi diri** (visualisasi positif) mendorong kita konsisten melangkah
+:::
+
+::: {.technical-note .section data-aos="fade-in"}
+## 🛠️ Proses Kreatif
 
 Secara teknis, **lagu dibuat dengan Suno.ai** berdasarkan lirik yang saya tulis, dan **video dibuat dengan Veo 3 (Google Gemini)** untuk memperkuat narasi visual. Fokus saya bukan pada teknologinya, melainkan pada pesan yang ingin disampaikan: menjaga harapan, mengambil langkah kecil yang konsisten, dan bertumbuh bersama orang-orang di sekitar.
+:::
 
-### Link Video Langsung
-[Tonton di YouTube](https://youtu.be/8LhuFTK2nAU?si=7a3KTaTzR6bkHcS0)
+::: {.cta-section data-aos="slide-up"}
+### 🎬 Link Video Langsung
+::: {.btn-container .text-center}
+[Tonton di YouTube](https://youtu.be/8LhuFTK2nAU?si=7a3KTaTzR6bkHcS0){.btn}
+:::
+:::
 
-### Lirik
+::: {.lyrics-section data-aos="fade-up"}
+### 📝 Lirik Lagu
 
-> **Verse**  
-> I used to walk in crooked lines  
-> Through shadows thick and cold as pine  
-> My heart a map with edges torn  
-> Each step a whisper  
-> Each breath worn  
->
-> **Prechorus**  
-> But the sun found my face one day  
-> Chased the gray  
-> Showed a brighter way  
->
-> **Chorus**  
-> Better steps  
-> I’m learning how  
-> To move forward  
-> Here and now  
-> The ground feels steady  
-> The sky is wide  
-> Better steps  
-> My soul’s my guide  
->
-> **Verse 2**  
-> I planted seeds in barren ground  
-> Watched as hope began to sprout  
-> The rain came soft  
-> The roots held tight  
-> Through storms  
-> I found my inner light  
->
-> **Prechorus**  
-> The winds may howl  
-> The clouds may weep  
-> But I’ve sown dreams I’m meant to keep  
->
-> **Chorus**  
-> Better steps  
-> I’m learning how  
-> To move forward  
-> Here and now  
-> The ground feels steady  
-> The sky is wide  
-> Better steps  
-> My soul’s my guide
+::: {.lyrics-container .section .glass-effect}
+::: {.verse-section}
+**Verse**  
+I used to walk in crooked lines  
+Through shadows thick and cold as pine  
+My heart a map with edges torn  
+Each step a whisper  
+Each breath worn  
+:::
+
+::: {.prechorus-section}
+**Prechorus**  
+But the sun found my face one day  
+Chased the gray  
+Showed a brighter way  
+:::
+
+::: {.chorus-section .quote-highlight}
+**Chorus**  
+Better steps  
+I'm learning how  
+To move forward  
+Here and now  
+The ground feels steady  
+The sky is wide  
+Better steps  
+My soul's my guide  
+:::
+
+::: {.verse-section}
+**Verse 2**  
+I planted seeds in barren ground  
+Watched as hope began to sprout  
+The rain came soft  
+The roots held tight  
+Through storms  
+I found my inner light  
+:::
+
+::: {.prechorus-section}
+**Prechorus**  
+The winds may howl  
+The clouds may weep  
+But I've sown dreams I'm meant to keep  
+:::
+
+::: {.chorus-section .quote-highlight}
+**Chorus**  
+Better steps  
+I'm learning how  
+To move forward  
+Here and now  
+The ground feels steady  
+The sky is wide  
+Better steps  
+My soul's my guide  
+:::
+:::
+:::
