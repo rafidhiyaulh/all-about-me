@@ -16,45 +16,45 @@ html {
 body {
   margin: 0;
   line-height: 1.7;
-  color: #2d3748;
-  background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 50%, #e2e8f0 100%);
+  color: #18181b;
+  background: linear-gradient(135deg, #fafafa 0%, #f4f4f5 40%, #e4e4e7 100%);
   min-height: 100vh;
   font-size: 1.1rem;
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #667eea, #764ba2);
+  background: linear-gradient(135deg, #52525b, #27272a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .glass-effect {
-  background: rgba(255, 255, 255, 0.98);
+  background: rgba(250, 250, 250, 0.85);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(228, 228, 231, 0.7);
 }
 
 .highlight-box {
-  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
-  border-left: 4px solid #667eea;
+  background: linear-gradient(135deg, rgba(228, 228, 231, 0.6), rgba(212, 212, 216, 0.6));
+  border-left: 4px solid #71717a;
 }
 
 .quote-highlight {
-  background: linear-gradient(135deg, #667eea, #764ba2);
-  color: white;
+  background: linear-gradient(135deg, #3f3f46, #18181b);
+  color: #fafafa;
   padding: 1.5rem 2rem;
   border-radius: 15px;
   margin: 1.5rem 0;
   font-size: 1.1rem;
   font-weight: 500;
   text-align: center;
-  box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+  box-shadow: 0 10px 25px rgba(24, 24, 27, 0.25);
 }
 
 blockquote {
-  border-left: 4px solid #667eea;
-  background: rgba(102, 126, 234, 0.05);
+  border-left: 4px solid #71717a;
+  background: rgba(228, 228, 231, 0.4);
   padding: 1.5rem 2rem;
   margin: 2rem 0;
   border-radius: 0 15px 15px 0;
@@ -65,7 +65,7 @@ blockquote {
 blockquote::before {
   content: '"';
   font-size: 4rem;
-  color: #667eea;
+  color: rgba(113, 113, 122, 0.4);
   position: absolute;
   top: -10px;
   left: 10px;
@@ -89,13 +89,13 @@ html {
 
 /* Custom glass effect improvements */
 .glass-effect {
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
 }
 
 /* Better focus states */
 .focus-ring:focus {
-  outline: 2px solid #667eea;
+  outline: 2px solid #3f3f46;
   outline-offset: 2px;
 }
 

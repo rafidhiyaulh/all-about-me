@@ -3,34 +3,34 @@ import { User, Music, Book } from 'lucide-react'
 
 const AtAGlance: React.FC = () => {
   return (
-    <div className="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-3">
-      <div className="p-3 bg-white rounded-lg shadow-sm flex items-center gap-3">
-        <div className="w-12 h-12 rounded-full bg-gradient-to-r from-primary-400 to-accent-400 flex items-center justify-center text-white font-bold">
+    <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-3">
+      <div className="flex items-center gap-3 rounded-xl border border-neutral-200 bg-white p-3 shadow">
+        <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-primary-200 to-primary-400 text-white">
           <User className="w-6 h-6" />
         </div>
         <div>
-          <div className="text-sm text-slate-500">Role</div>
-          <div className="font-semibold">Mahasiswa ITB</div>
+          <div className="text-xs uppercase tracking-wide text-neutral-500">Role</div>
+          <div className="font-semibold text-neutral-900">Mahasiswa ITB</div>
         </div>
       </div>
 
-      <div className="p-3 bg-white rounded-lg shadow-sm flex items-center gap-3">
-        <div className="w-12 h-12 rounded-full bg-slate-100 flex items-center justify-center text-slate-700">
+      <div className="flex items-center gap-3 rounded-xl border border-neutral-200 bg-white p-3 shadow">
+        <div className="flex h-12 w-12 items-center justify-center rounded-full bg-neutral-200 text-neutral-700">
           <Music className="w-6 h-6" />
         </div>
         <div>
-          <div className="text-sm text-slate-500">Focus</div>
-          <div className="font-semibold">Komunikasi & Karya</div>
+          <div className="text-xs uppercase tracking-wide text-neutral-500">Focus</div>
+          <div className="font-semibold text-neutral-900">Komunikasi & Karya</div>
         </div>
       </div>
 
-      <div className="p-3 bg-white rounded-lg shadow-sm flex items-center gap-3">
-        <div className="w-12 h-12 rounded-full bg-slate-100 flex items-center justify-center text-slate-700">
+      <div className="flex items-center gap-3 rounded-xl border border-neutral-200 bg-white p-3 shadow">
+        <div className="flex h-12 w-12 items-center justify-center rounded-full bg-neutral-200 text-neutral-700">
           <Book className="w-6 h-6" />
         </div>
         <div>
-          <div className="text-sm text-slate-500">Interests</div>
-          <div className="font-semibold">Teknologi • Data • Manusia</div>
+          <div className="text-xs uppercase tracking-wide text-neutral-500">Interests</div>
+          <div className="font-semibold text-neutral-900">Teknologi • Data • Manusia</div>
         </div>
       </div>
     </div>

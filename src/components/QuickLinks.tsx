@@ -11,16 +11,20 @@ const QuickLinks: React.FC = () => {
   ]
 
   return (
-    <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+    <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
       {links.map((l) => (
-        <Link key={l.to} to={l.to} className="card bg-base-100 shadow-md">
-          <div className="card-body p-4 flex items-center justify-between">
-            <div>
-              <div className="text-sm text-slate-500">Go to</div>
-              <div className="text-lg font-semibold text-slate-800">{l.title}</div>
-            </div>
-            <button className="btn btn-ghost btn-sm">Open</button>
+        <Link
+          key={l.to}
+          to={l.to}
+          className="flex items-center justify-between gap-4 rounded-xl border border-neutral-200 bg-white p-4 shadow transition hover:border-neutral-300 hover:shadow-md"
+        >
+          <div>
+            <div className="text-xs uppercase tracking-wide text-neutral-500">Go to</div>
+            <div className="text-base font-semibold text-neutral-900 sm:text-lg">{l.title}</div>
           </div>
+          <span className="inline-flex items-center rounded-lg border border-neutral-300 px-3 py-1 text-sm font-semibold text-neutral-700 transition hover:border-neutral-400">
+            Open
+          </span>
         </Link>
       ))}
     </div>

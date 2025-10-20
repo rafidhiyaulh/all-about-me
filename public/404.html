@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="rafi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memuat...</title>
+    <link rel="icon" type="image/svg+xml" href="/all-about-me/favicon-v2.svg" />
+    <link rel="icon" type="image/svg+xml" sizes="32x32" href="/all-about-me/favicon-32.svg" />
+    <link rel="icon" type="image/svg+xml" sizes="16x16" href="/all-about-me/favicon-16.svg" />
+    <link rel="apple-touch-icon" href="/all-about-me/favicon-32.svg" />
+    <link rel="shortcut icon" href="/all-about-me/favicon-v2.svg" />
+    <link rel="mask-icon" href="/all-about-me/favicon.svg" color="#3f3f46" />
+    <meta name="theme-color" content="#18181b" />
+  </head>
+  <body>
+    <noscript>Harap aktifkan JavaScript untuk melanjutkan.</noscript>
+    <script>
+      ;(function() {
+        var base = '/all-about-me'
+        var path = window.location.pathname.replace(base, '') || '/'
+        var target = path + window.location.search + window.location.hash
+        try {
+          sessionStorage.setItem('rafi-redirect-path', target)
+        } catch (e) {
+          console.warn('Tidak bisa menyimpan rute redirect:', e)
+        }
+        window.location.replace(base + '/')
+      })()
+    </script>
+  </body>
+</html>

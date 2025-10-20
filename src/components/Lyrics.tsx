@@ -63,24 +63,24 @@ const sections = [
 
 const Lyrics: React.FC = () => {
   return (
-    <div className="space-y-6">
-      <div className="text-center mb-2">
-        <h3 className="text-2xl md:text-3xl font-semibold flex items-center justify-center gap-2">
-          <Music className="w-6 h-6 text-indigo-600" />
+    <div className="space-y-6 text-neutral-800">
+      <div className="mb-2 text-center">
+        <h3 className="text-2xl md:text-3xl font-semibold flex items-center justify-center gap-2 text-neutral-900">
+          <Music className="w-6 h-6 text-primary-600" />
           <span>Lirik Lagu</span>
         </h3>
-        <p className="text-sm text-slate-500 mt-1">Better Steps — Struktur lagu dan lirik</p>
+        <p className="mt-1 text-sm text-neutral-500">Better Steps — Struktur lagu dan lirik</p>
       </div>
 
       <div className="grid grid-cols-1 gap-4">
         {sections.map((s) => (
           <div key={s.id} className="w-full">
-            <div className="p-4 rounded-lg bg-white/80 shadow-sm border border-gray-100">
-              <div className="flex items-start gap-4 mb-2">
+            <div className="p-4 rounded-lg border border-neutral-200 bg-white shadow-sm">
+              <div className="mb-2 flex items-start gap-4">
                 <div className="w-28 flex-shrink-0">
-                  <h4 className="text-sm font-semibold text-slate-600">{s.title}</h4>
+                  <h4 className="text-sm font-semibold text-neutral-600">{s.title}</h4>
                 </div>
-                <div className="prose prose-sm max-w-none text-slate-800">
+                <div className="prose prose-sm max-w-none text-neutral-800">
                   {s.lines.map((l, i) => (
                     <p key={i} className={`leading-relaxed mb-1 ${s.isChorus ? 'font-medium' : ''}`}>{l}</p>
                   ))}
@@ -91,12 +91,12 @@ const Lyrics: React.FC = () => {
         ))}
 
         {/* repeat chorus at the end for song structure - left aligned like verses */}
-        <div className="p-4 rounded-lg bg-white/80 shadow-sm border border-gray-100">
-          <div className="flex items-start gap-4 mb-2">
+        <div className="p-4 rounded-lg border border-neutral-200 bg-white shadow-sm">
+          <div className="mb-2 flex items-start gap-4">
             <div className="w-28 flex-shrink-0">
-              <h4 className="text-sm font-semibold text-slate-600">Chorus</h4>
+              <h4 className="text-sm font-semibold text-neutral-600">Chorus</h4>
             </div>
-            <div className="prose prose-sm max-w-none text-slate-800">
+            <div className="prose prose-sm max-w-none text-neutral-800">
               {sections.find((x) => x.id === 'chorus')!.lines.map((l, i) => (
                 <p key={i} className="leading-relaxed mb-1 font-medium">{l}</p>
               ))}

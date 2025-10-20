@@ -3,6 +3,8 @@ import { Link, useLocation } from 'react-router-dom'
 import { Home, User, Music, BookOpen, Heart, FileText, Menu, X } from 'lucide-react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { cn } from '../lib/utils'
+import ScrollArea from './ScrollArea'
+import ProgressiveBlur from './ProgressiveBlur'
 
 interface LayoutProps {
   children: ReactNode
@@ -28,21 +30,21 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   }, [location.pathname])
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50">
+    <div className="min-h-screen bg-gradient-to-br from-primary-50 via-primary-100 to-primary-200 text-neutral-900">
       <div className="relative mx-auto flex min-h-screen w-full flex-col md:flex-row">
         {/* Mobile header */}
-        <header className="sticky top-0 z-30 flex items-center justify-between border-b border-white/40 bg-white/90 px-4 py-3 shadow-sm backdrop-blur md:hidden">
+        <header className="sticky top-0 z-30 flex items-center justify-between border-b border-neutral-200 bg-white/90 px-4 py-3 shadow-sm backdrop-blur md:hidden">
           <div className="flex items-center gap-3">
             <img src={avatarSrc} alt="Rafi" className="w-10 h-10 rounded-md shadow-sm" />
             <div>
-              <p className="text-sm font-semibold text-slate-700">Muhammad Rafi</p>
-              <p className="text-xs text-slate-500">Portfolio Asesmen KIPP</p>
+              <p className="text-sm font-semibold text-neutral-800">Muhammad Rafi</p>
+              <p className="text-xs text-neutral-500">Portfolio Asesmen KIPP</p>
             </div>
           </div>
           <button
             type="button"
             onClick={() => setIsNavOpen((prev) => !prev)}
-            className="inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white px-3 py-2 text-slate-600 shadow-sm transition hover:border-blue-200 hover:text-blue-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
+            className="inline-flex items-center justify-center rounded-lg border border-neutral-200 bg-white px-3 py-2 text-neutral-600 shadow-sm transition hover:border-neutral-400 hover:text-neutral-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-neutral-500 focus-visible:ring-offset-2"
             aria-expanded={isNavOpen}
             aria-controls="mobile-navigation"
             aria-label="Toggle navigation"
@@ -62,7 +64,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
               transition={{ duration: 0.2 }}
               className="md:hidden px-4 pb-4"
             >
-              <div className="glass-effect rounded-2xl border border-white/40 bg-white/95 p-3 shadow-xl">
+              <div className="glass-effect rounded-2xl border border-neutral-200 bg-white/95 p-3 shadow-xl">
                 <div className="space-y-2">
                   {navigation.map((item) => {
                     const Icon = item.icon
@@ -75,8 +77,8 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                         className={cn(
                           'flex items-center gap-3 rounded-xl px-4 py-3 transition-colors',
                           isActive
-                            ? 'bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-md'
-                            : 'bg-white/90 text-slate-600 hover:bg-blue-50 hover:text-blue-700'
+                            ? 'bg-gradient-to-r from-primary-500 to-primary-700 text-white shadow-md'
+                            : 'bg-white/90 text-neutral-600 hover:bg-neutral-100 hover:text-neutral-900'
                         )}
                       >
                         <Icon className="h-5 w-5 flex-shrink-0" />
@@ -95,16 +97,16 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           initial={{ x: -300 }}
           animate={{ x: 0 }}
           transition={{ duration: 0.5, ease: "easeOut" }}
-          className="hidden h-screen w-80 flex-shrink-0 flex-col border-r border-white/20 bg-white/95 shadow-xl backdrop-blur-xl glass-effect md:sticky md:top-0 md:flex"
+          className="hidden h-screen w-80 flex-shrink-0 flex-col border-r border-neutral-200 bg-white/95 shadow-xl backdrop-blur-xl glass-effect md:sticky md:top-0 md:flex"
         >
           <div className="p-8 h-full flex flex-col">
             <div className="flex items-center gap-3 mb-6">
-              <img src={avatarSrc} alt="Rafi" className="w-12 h-12 rounded-md shadow-sm" />
+              <img src={avatarSrc} alt="Rafi" className="w-12 h-12 rounded-md shadow-sm ring-1 ring-neutral-200" />
               <motion.h1 
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
-              className="text-2xl font-bold text-slate-800 mb-0 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"
+              className="text-2xl font-bold text-neutral-900 mb-0 bg-gradient-to-r from-primary-500 to-primary-700 bg-clip-text text-transparent"
             >
               Muhammad Rafi Dhiyaulhaq
             </motion.h1>
@@ -127,14 +129,14 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                       className={cn(
                         "group flex items-center space-x-3 px-5 py-4 rounded-xl transition-all duration-300 relative overflow-hidden",
                         isActive
-                          ? "bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-lg shadow-blue-500/25"
-                          : "text-slate-600 hover:bg-white/70 hover:text-slate-800 hover:shadow-md"
+                          ? "bg-gradient-to-r from-primary-500 to-primary-700 text-white shadow-lg shadow-neutral-500/25"
+                          : "text-neutral-600 hover:bg-neutral-100 hover:text-neutral-900 hover:shadow-md"
                       )}
                     >
                       {isActive && (
                         <motion.div
                           layoutId="activeTab"
-                          className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl"
+                          className="absolute inset-0 bg-gradient-to-r from-primary-500 to-primary-700 rounded-xl"
                           transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
                         />
                       )}
@@ -151,15 +153,18 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         {/* Main Content */}
         <main className="flex-1">
           <div className="max-w-7xl mx-auto w-full px-4 py-6 sm:px-6 lg:px-12">
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
-              className="glass-effect rounded-3xl border border-white/20 bg-white/95 p-5 shadow-2xl backdrop-blur-xl sm:p-8 lg:p-12 md:min-h-[calc(100vh-6rem)]"
+              className="glass-effect rounded-3xl border border-neutral-200 bg-white/95 p-0 shadow-2xl backdrop-blur-xl md:min-h-[calc(100vh-6rem)]"
             >
-              <div className="mx-auto w-full max-w-5xl">
-                {children}
-              </div>
+              <ScrollArea className="rounded-3xl p-5 sm:p-8 lg:p-12">
+                <div className="mx-auto w-full max-w-5xl pb-12">
+                  {children}
+                </div>
+                <ProgressiveBlur position="bottom" height="28%" />
+              </ScrollArea>
             </motion.div>
           </div>
         </main>
