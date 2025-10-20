@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import Lyrics from '../components/Lyrics'
 import { Youtube, Music, FileText, Wrench } from 'lucide-react'
 import Lens from '../components/Lens'
-import AuroraText from '../components/AuroraText'
+import HyperText from '../components/HyperText'
+import Highlighter from '../components/Highlighter'
 
 const MySongs: React.FC = () => {
   const [open, setOpen] = useState(false)
@@ -10,9 +11,9 @@ const MySongs: React.FC = () => {
     <div className="space-y-6 text-neutral-800">
       {/* Title Section */}
       <div className="mb-6 text-center">
-        <AuroraText as="h1" className="text-4xl sm:text-5xl md:text-6xl font-bold mb-3">
+        <HyperText as="h1" className="text-4xl sm:text-5xl md:text-6xl font-bold mb-3">
           UTS-2 My Songs for You
-        </AuroraText>
+        </HyperText>
         <p className="text-base text-neutral-600 sm:text-lg md:text-xl">
           Better Steps - A Musical Reflection
         </p>
@@ -37,13 +38,14 @@ const MySongs: React.FC = () => {
         
       <div className="glass-effect rounded-2xl border border-neutral-200 p-4 mb-3 shadow">
           <p className="text-base leading-relaxed sm:text-lg">
-            "Better Steps" saya buat sebagai refleksi perjalanan pribadi menuju langkah yang lebih baik dalam belajar, bekerja, dan berelasi. Lagu ini bercerita tentang proses bertumbuh: mengakui rasa takut, menata pikiran, lalu bergerak pelan tetapi pasti. Pesan utamanya sederhana: kita bisa memilih kata dan tindakan yang membangun pengertian bersama, mulai dari diri sendiri.
+            <Highlighter color="#d4d4d8">"Better Steps"</Highlighter> saya buat sebagai refleksi perjalanan pribadi menuju langkah yang lebih baik dalam belajar, bekerja, dan berelasi. Lagu ini bercerita tentang proses bertumbuh: mengakui rasa takut, menata pikiran, lalu bergerak pelan tetapi pasti. Pesan utamanya sederhana: kita bisa memilih kata dan tindakan yang membangun pengertian bersama, mulai dari diri sendiri.
           </p>
         </div>
 
   <div className="highlight-box rounded-xl p-4 mb-4">
           <p className="text-base leading-relaxed mb-4 sm:text-lg">
-            Karya ini selaras dengan pembelajaran di mata kuliah <strong>Komunikasi Interpersonal & Publik</strong>, di mana saya belajar bahwa:
+            Karya ini selaras dengan pembelajaran di mata kuliah{' '}
+            <Highlighter color="#d4d4d8">Komunikasi Interpersonal & Publik</Highlighter>, di mana saya belajar bahwa:
           </p>
           <ol className="space-y-2 text-base leading-relaxed sm:text-lg">
             <li>1. <strong>Self-talk yang sehat</strong> membantu menenangkan diri dan menjaga fokus</li>

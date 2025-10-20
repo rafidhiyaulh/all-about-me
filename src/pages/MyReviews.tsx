@@ -1,25 +1,30 @@
 import React from 'react'
-import AuroraText from '../components/AuroraText'
+import HyperText from '../components/HyperText'
+import Highlighter from '../components/Highlighter'
 
 const MyReviews: React.FC = () => {
   return (
     <div className="space-y-6 text-neutral-800">
       <div className="mb-6 text-center">
-        <AuroraText
+        <HyperText
           as="h1"
           className="text-4xl sm:text-5xl md:text-6xl font-bold mb-2"
         >
           UTS-5 My Personal Reviews
-        </AuroraText>
+        </HyperText>
       </div>
 
       <div className="glass-effect rounded-xl border border-neutral-200 p-4 mb-4">
         <p className="text-base leading-relaxed mb-6 sm:text-lg">
-          Berikut cara saya melakukan review: menggunakan ChatGPT.
+          Berikut cara saya melakukan review: menggunakan{' '}
+          <Highlighter color="#d4d4d8">ChatGPT</Highlighter> untuk merefleksikan tiap tugas.
         </p>
         <p className="text-base leading-relaxed mb-6 sm:text-lg">
           Saya mengattach{' '}
-          <a href="/skor_uts.pdf" className="font-semibold text-primary-700 underline hover:text-primary-600">
+          <a
+            href={`${import.meta.env.BASE_URL}skor_uts.pdf`}
+            className="font-semibold text-primary-700 underline hover:text-primary-600"
+          >
             file prompt ChatGPT
           </a>
           , disertai perintah:
@@ -172,9 +177,6 @@ const MyReviews: React.FC = () => {
             <li>2. Lengkapi halaman ini dengan contoh <em>review personal</em> mendalam terhadap satu karya (UTS-1/UTS-3).</li>
             <li>3. Revisi minor desain untuk memastikan keseragaman warna dan navigasi sebelum UAS.</li>
           </ol>
-          <p className="mt-4 text-neutral-500 italic">
-            (Link masing-masing halaman UTS menyusul setelah struktur situs final diperbarui.)
-          </p>
         </div>
       </div>
     </div>

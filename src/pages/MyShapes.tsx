@@ -1,16 +1,17 @@
 import React from 'react'
-import AuroraText from '../components/AuroraText'
+import HyperText from '../components/HyperText'
+import Highlighter from '../components/Highlighter'
 
 const MyShapes: React.FC = () => {
   return (
     <div className="space-y-6 text-neutral-800">
       <div className="text-center mb-6">
-        <AuroraText
+        <HyperText
           as="h1"
           className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4"
         >
           UTS-4 My SHAPE (Spiritual Gifts, Heart, Abilities, Personality, Experiences)
-        </AuroraText>
+        </HyperText>
       </div>
 
       <div className="glass-effect rounded-xl border border-neutral-200 p-4 mb-6">
@@ -89,9 +90,10 @@ const MyShapes: React.FC = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M12 6v6l4 2" />
               </svg>
             </div>
-            <p className="text-base leading-relaxed sm:text-lg text-neutral-700">
-              Saya berkomitmen menghubungkan pengetahuan, teknologi, dan manusia: menerapkan apa yang saya pelajari untuk membantu orang tumbuh — bukan hanya dari segi keterampilan, tetapi juga pemahaman dan empati. Saya ingin karya dan kolaborasi saya memudahkan orang lain dan memperkaya hubungan antarmanusia.
-            </p>
+          <p className="text-base leading-relaxed sm:text-lg text-neutral-700">
+            Saya berkomitmen menghubungkan pengetahuan, teknologi, dan manusia: menerapkan apa yang saya pelajari untuk membantu orang tumbuh — bukan hanya dari segi keterampilan, tetapi juga pemahaman dan empati. Saya ingin karya dan kolaborasi saya memudahkan orang lain dan memperkaya hubungan antarmanusia melalui{' '}
+            <Highlighter color="#d4d4d8">kolaborasi yang hangat</Highlighter>.
+          </p>
           </div>
         </div>
       </div>

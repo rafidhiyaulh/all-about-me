@@ -3,7 +3,9 @@ import { motion } from 'framer-motion'
 import { Sparkles, BookOpen, Music } from 'lucide-react'
 import QuickLinks from '../components/QuickLinks'
 import FeaturedPanel from '../components/FeaturedPanel'
-import AuroraText from '../components/AuroraText'
+import HyperText from '../components/HyperText'
+import Highlighter from '../components/Highlighter'
+import { ScrollVelocityContainer, ScrollVelocityRow } from '../components/ScrollVelocity'
 
 const Welcome: React.FC = () => {
   return (
@@ -23,19 +25,22 @@ const Welcome: React.FC = () => {
         >
           <Sparkles className="w-10 h-10 text-white" />
         </motion.div>
-        <AuroraText
+        <HyperText
           as="h1"
           className="mb-4 text-4xl font-bold tracking-tight sm:text-5xl lg:text-7xl"
         >
           Selamat Datang
-        </AuroraText>
+        </HyperText>
         <motion.p 
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.4 }}
           className="text-base font-medium text-neutral-600 sm:text-lg md:text-2xl"
         >
-          Portfolio Asesmen II-2100 KIPP
+          Portfolio Asesmen{' '}
+          <Highlighter action="underline" color="#d4d4d8">
+            II-2100 KIPP
+          </Highlighter>
         </motion.p>
       </motion.div>
 
@@ -51,7 +56,13 @@ const Welcome: React.FC = () => {
             <BookOpen className="w-8 h-8 text-primary-600" />
           </div>
           <p className="text-base leading-relaxed text-neutral-700 sm:text-lg">
-            Website ini dibuat untuk memenuhi tugas mata kuliah <strong className="text-primary-700">II2100 Komunikasi Interpersonal dan Publik</strong> pada <strong className="text-primary-700">Program Studi Sistem dan Teknologi Informasi, Sekolah Teknik Elektro dan Informatika – Institut Teknologi Bandung (ITB)</strong>.
+            Website ini dibuat untuk memenuhi tugas mata kuliah{' '}
+            <Highlighter color="#e4e4e7">II2100 Komunikasi Interpersonal dan Publik</Highlighter>{' '}
+            pada{' '}
+            <Highlighter action="underline" color="#d4d4d8">
+              Program Studi Sistem dan Teknologi Informasi – STEI ITB
+            </Highlighter>
+            .
           </p>
         </div>
       </motion.div>
@@ -59,7 +70,10 @@ const Welcome: React.FC = () => {
       {/* Main Description */}
       <div className="mb-6">
         <p className="mb-4 text-base leading-relaxed text-neutral-700 sm:text-lg">
-          Melalui situs ini, saya mendokumentasikan berbagai pembelajaran, refleksi pribadi, serta karya yang dihasilkan selama perkuliahan. Setiap bagian menggambarkan penerapan konsep komunikasi (seperti kesadaran diri, empati, mendengarkan aktif, hingga komunikasi publik) dalam konteks kehidupan akademik dan profesional.
+          Melalui situs ini, saya mendokumentasikan berbagai pembelajaran, refleksi pribadi, serta karya yang dihasilkan selama perkuliahan. Setiap bagian menggambarkan penerapan konsep komunikasi seperti{' '}
+          <Highlighter color="#d4d4d8">kesadaran diri</Highlighter>,{' '}
+          <Highlighter color="#d4d4d8">empati</Highlighter>, dan{' '}
+          <Highlighter color="#d4d4d8">mendengarkan aktif</Highlighter> dalam konteks kehidupan akademik dan profesional.
         </p>
       </div>
 
@@ -83,6 +97,19 @@ const Welcome: React.FC = () => {
 
       {/* Quick links to fill space */}
       <QuickLinks />
+
+      <div className="rounded-2xl border border-neutral-200 bg-white p-4 shadow">
+        <ScrollVelocityContainer className="text-xl font-semibold tracking-tight sm:text-2xl">
+          <ScrollVelocityRow baseVelocity={22} direction={1}>
+            <span className="mx-4">Komunikasi Efektif · Empati · Refleksi · Kolaborasi</span>
+            <span className="mx-4">Komunikasi Efektif · Empati · Refleksi · Kolaborasi</span>
+          </ScrollVelocityRow>
+          <ScrollVelocityRow baseVelocity={18} direction={-1}>
+            <span className="mx-4">Belajar Sepanjang Hayat · Cerita · Karya · Insight</span>
+            <span className="mx-4">Belajar Sepanjang Hayat · Cerita · Karya · Insight</span>
+          </ScrollVelocityRow>
+        </ScrollVelocityContainer>
+      </div>
 
       <FeaturedPanel />
     </div>

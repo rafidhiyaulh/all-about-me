@@ -1,7 +1,8 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import StoryImage from '../components/StoryImage'
-import AuroraText from '../components/AuroraText'
+import HyperText from '../components/HyperText'
+import Highlighter from '../components/Highlighter'
 
 const MyStories: React.FC = () => {
   return (
@@ -12,9 +13,9 @@ const MyStories: React.FC = () => {
         animate={{ opacity: 1, y: 0 }}
   className="text-center mb-6"
       >
-        <AuroraText as="h1" className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">
+        <HyperText as="h1" className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">
           UTS-3 My Stories for You
-        </AuroraText>
+        </HyperText>
       </motion.div>
 
       {/* Story 1: Secangkir Keheningan */}
@@ -26,7 +27,7 @@ const MyStories: React.FC = () => {
       >
   <h2 className="text-3xl sm:text-4xl font-bold text-neutral-900 mb-6 flex items-center">
           <span className="bg-gradient-to-r from-primary-200 to-primary-400 w-2 h-12 rounded-full mr-4"></span>
-          Secangkir Keheningan
+          <Highlighter action="underline" color="#e4e4e7">Secangkir Keheningan</Highlighter>
         </h2>
         
         <StoryImage

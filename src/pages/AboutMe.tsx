@@ -2,14 +2,16 @@ import React from 'react'
 import { User, MessageSquare, Users, Brain, Smartphone, Rocket } from 'lucide-react'
 import AtAGlance from '../components/AtAGlance'
 import Lens from '../components/Lens'
+import HyperText from '../components/HyperText'
+import Highlighter from '../components/Highlighter'
 
 const AboutMe: React.FC = () => {
   return (
     <div className="space-y-6 text-neutral-800">
       <div className="mb-6 text-center">
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-primary-700 mb-4">
+        <HyperText as="h1" className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">
           UTS-1 All About Me
-        </h1>
+        </HyperText>
         <p className="text-base text-neutral-600 sm:text-xl">
           Getting to Know Muhammad Rafi Dhiyaulhaq
         </p>
@@ -36,7 +38,8 @@ const AboutMe: React.FC = () => {
           Siapa saya?
         </h2>
         <p className="text-base leading-relaxed mb-2 sm:text-lg">
-          <strong>Saya Muhammad Rafi Dhiyaulhaq</strong>, mahasiswa tingkat akhir Sistem dan Teknologi Informasi di ITB yang senang belajar hal baru terutama yang berada di pertemuan antara teknologi, data, dan manusia. Di kelas Komunikasi Interpersonal dan Publik saya belajar bahwa komunikasi yang baik bukan sekadar berbicara tetapi membangun pengertian bersama. Itu juga yang ingin saya berikan di halaman ini: gambaran singkat tentang diri saya, cara saya berproses, dan nilai yang ingin saya bawa saat berinteraksi dengan orang lain.
+          <strong>Saya Muhammad Rafi Dhiyaulhaq</strong>, mahasiswa tingkat akhir Sistem dan Teknologi Informasi di ITB yang senang belajar hal baru terutama yang berada di pertemuan antara teknologi, data, dan manusia. Di kelas{' '}
+          <Highlighter color="#d4d4d8">Komunikasi Interpersonal dan Publik</Highlighter> saya belajar bahwa komunikasi yang baik bukan sekadar berbicara tetapi membangun pengertian bersama. Itu juga yang ingin saya berikan di halaman ini: gambaran singkat tentang diri saya, cara saya berproses, dan nilai yang ingin saya bawa saat berinteraksi dengan orang lain.
         </p>
       </div>
 
