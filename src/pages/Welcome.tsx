@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { Sparkles, BookOpen, Users, Heart, Music } from 'lucide-react'
+import { Sparkles, BookOpen, Music } from 'lucide-react'
 import QuickLinks from '../components/QuickLinks'
 import FeaturedPanel from '../components/FeaturedPanel'
 

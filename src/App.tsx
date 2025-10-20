@@ -1,4 +1,4 @@
-import React from 'react'
+// React import not required with the new JSX transform
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Layout from './components/Layout'
 import Welcome from './pages/Welcome'
