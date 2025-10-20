@@ -1,7 +1,7 @@
-import React, { ReactNode } from 'react'
+import React, { ReactNode, useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { Home, User, Music, BookOpen, Heart, FileText } from 'lucide-react'
-import { motion } from 'framer-motion'
+import { Home, User, Music, BookOpen, Heart, FileText, Menu, X } from 'lucide-react'
+import { AnimatePresence, motion } from 'framer-motion'
 import { cn } from '../lib/utils'
 
 interface LayoutProps {
@@ -17,22 +17,89 @@ const navigation = [
   { path: '/uts-5', label: 'UTS-5 My Personal Reviews', icon: FileText },
 ]
 
+const avatarSrc = `${import.meta.env.BASE_URL}favicon.svg`
+
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   const location = useLocation()
+  const [isNavOpen, setIsNavOpen] = useState(false)
+
+  useEffect(() => {
+    setIsNavOpen(false)
+  }, [location.pathname])
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50">
-      <div className="flex h-screen max-w-none">
+      <div className="relative mx-auto flex min-h-screen w-full flex-col md:flex-row">
+        {/* Mobile header */}
+        <header className="sticky top-0 z-30 flex items-center justify-between border-b border-white/40 bg-white/90 px-4 py-3 shadow-sm backdrop-blur md:hidden">
+          <div className="flex items-center gap-3">
+            <img src={avatarSrc} alt="Rafi" className="w-10 h-10 rounded-md shadow-sm" />
+            <div>
+              <p className="text-sm font-semibold text-slate-700">Muhammad Rafi</p>
+              <p className="text-xs text-slate-500">Portfolio Asesmen KIPP</p>
+            </div>
+          </div>
+          <button
+            type="button"
+            onClick={() => setIsNavOpen((prev) => !prev)}
+            className="inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white px-3 py-2 text-slate-600 shadow-sm transition hover:border-blue-200 hover:text-blue-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
+            aria-expanded={isNavOpen}
+            aria-controls="mobile-navigation"
+            aria-label="Toggle navigation"
+          >
+            {isNavOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+          </button>
+        </header>
+
+        <AnimatePresence initial={false}>
+          {isNavOpen && (
+            <motion.nav
+              id="mobile-navigation"
+              key="mobile-navigation"
+              initial={{ opacity: 0, y: -12 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -12 }}
+              transition={{ duration: 0.2 }}
+              className="md:hidden px-4 pb-4"
+            >
+              <div className="glass-effect rounded-2xl border border-white/40 bg-white/95 p-3 shadow-xl">
+                <div className="space-y-2">
+                  {navigation.map((item) => {
+                    const Icon = item.icon
+                    const isActive = location.pathname === item.path
+
+                    return (
+                      <Link
+                        key={item.path}
+                        to={item.path}
+                        className={cn(
+                          'flex items-center gap-3 rounded-xl px-4 py-3 transition-colors',
+                          isActive
+                            ? 'bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-md'
+                            : 'bg-white/90 text-slate-600 hover:bg-blue-50 hover:text-blue-700'
+                        )}
+                      >
+                        <Icon className="h-5 w-5 flex-shrink-0" />
+                        <span className="text-sm font-medium">{item.label}</span>
+                      </Link>
+                    )
+                  })}
+                </div>
+              </div>
+            </motion.nav>
+          )}
+        </AnimatePresence>
+
         {/* Sidebar */}
-        <motion.div 
+        <motion.div
           initial={{ x: -300 }}
           animate={{ x: 0 }}
           transition={{ duration: 0.5, ease: "easeOut" }}
-          className="w-80 h-screen sticky top-0 glass-effect border-r border-white/20 shadow-xl backdrop-blur-xl bg-white/95 flex-shrink-0"
+          className="hidden h-screen w-80 flex-shrink-0 flex-col border-r border-white/20 bg-white/95 shadow-xl backdrop-blur-xl glass-effect md:sticky md:top-0 md:flex"
         >
           <div className="p-8 h-full flex flex-col">
             <div className="flex items-center gap-3 mb-6">
-              <img src="/favicon.svg" alt="Rafi" className="w-12 h-12 rounded-md shadow-sm" />
+              <img src={avatarSrc} alt="Rafi" className="w-12 h-12 rounded-md shadow-sm" />
               <motion.h1 
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -82,20 +149,20 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         </motion.div>
 
         {/* Main Content */}
-        <div className="flex-1 overflow-y-auto overflow-x-hidden">
-          <div className="max-w-7xl mx-auto p-6 lg:p-12">
+        <main className="flex-1">
+          <div className="max-w-7xl mx-auto w-full px-4 py-6 sm:px-6 lg:px-12">
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
-              className="glass-effect rounded-3xl p-8 lg:p-12 shadow-2xl backdrop-blur-xl bg-white/95 border border-white/20 min-h-[calc(100vh-6rem)]"
+              className="glass-effect rounded-3xl border border-white/20 bg-white/95 p-5 shadow-2xl backdrop-blur-xl sm:p-8 lg:p-12 md:min-h-[calc(100vh-6rem)]"
             >
-              <div className="max-w-5xl mx-auto">
+              <div className="mx-auto w-full max-w-5xl">
                 {children}
               </div>
             </motion.div>
           </div>
-        </div>
+        </main>
       </div>
     </div>
   )
