@@ -1,6 +1,6 @@
 # Portfolio Muhammad Rafi Dhiyaulhaq
 
-Modern React + TypeScript portfolio that documents work for mata kuliah **Komunikasi Interpersonal dan Publik (II-2100)**. Seluruh konten berasal dari arsip Quarto asli dan dipertahankan apa adanya.
+Modern React + TypeScript portfolio that documents work for mata kuliah **Komunikasi Interpersonal dan Publik (II-2100)**.
 
 ## ✨ Fitur Utama
 

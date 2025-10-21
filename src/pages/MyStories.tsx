@@ -78,7 +78,7 @@ const MyStories: React.FC = () => {
         <StoryImage
           src="/all-about-me/images/senja-di-rumah-kakek.jpg"
           alt="Senja di Rumah Kakek"
-          caption="Amerika, 2024 — sore tenang di halaman rumah kakek yang mengajarkan arti mendengarkan dengan sabar."
+          caption="Pennsylvania, 2024 — sore tenang di halaman rumah kakek yang mengajarkan arti mendengarkan dengan sabar."
         />
 
         <div className="prose prose-lg max-w-none">
@@ -131,7 +131,7 @@ const MyStories: React.FC = () => {
         <StoryImage
           src="/all-about-me/images/malam-di-depan-kampus.jpg"
           alt="Malam di Depan Kampus"
-          caption="Bandung, 2025 — malam yang lembap di depan kampus menjadi ruang refleksi tentang arti komunikasi yang jujur."
+          caption="Bandung, 2024 — malam yang lembap di depan kampus menjadi ruang refleksi tentang arti komunikasi yang jujur."
         />
 
         <div className="prose prose-lg max-w-none">
