@@ -214,7 +214,7 @@ const MyReviews: React.FC = () => {
           <p className="mt-3 text-base leading-relaxed text-neutral-700 sm:text-lg">
             Ringkasan penilaian rekan dapat diunduh langsung dalam format Excel:{' '}
             <a
-              href="https://docs.google.com/spreadsheets/d/1tm8-xGg4-LD-tEXYxDRhqE44ZylWuNRp/export?format=xlsx"
+              href="https://docs.google.com/spreadsheets/d/1XgGsCfGB5NZRKMIEAVUmx-JLiJVh8ZI1/export?format=xlsx"
               className="font-semibold text-primary-700 underline hover:text-primary-600"
             >
               Unduh penilaian peer (XLSX)
