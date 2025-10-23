@@ -2,6 +2,36 @@ import React from 'react'
 import HyperText from '../components/HyperText'
 import Highlighter from '../components/Highlighter'
 
+const peerAssessments = [
+  {
+    name: 'Mineva Azzahra',
+    nim: '18224029',
+    summary: 'Skor rata-rata 4/5 untuk seluruh rubrik UTS maupun UAS dengan konsistensi antar kriteria.',
+    highlights: [
+      'UTS 1–5: setiap indikator (orisinalitas, keterlibatan, humor/inspirasi, wawasan) mendapatkan skor 4.',
+      'UAS 1–4: seluruh aspek (kejelasan, logika, validitas, kegunaan, hingga dampak) stabil di skor 4.',
+    ],
+  },
+  {
+    name: 'Salma Az Zahra',
+    nim: '18224015',
+    summary: 'Performa merata di seluruh penilaian; semua kriteria memperoleh skor 4/5 tanpa ada deviasi.',
+    highlights: [
+      'UTS 1–5: mendapatkan skor 4 pada tiap indikator, menunjukkan konsistensi kualitas karya.',
+      'UAS 1–4: setiap aspek penilaian presentasi dan proposal tercatat stabil pada skor 4.',
+    ],
+  },
+  {
+    name: 'Aldyto Rafif Abhinaya',
+    nim: '18224043',
+    summary: 'Mempertahankan skor 4/5 di semua rubrik; menunjukkan kualitas yang solid dan terkontrol.',
+    highlights: [
+      'UTS 1–5: seluruh kriteria memperoleh skor 4, menandakan pemahaman materi yang seragam.',
+      'UAS 1–4: indikator konten, organisasi, penyajian, keterlibatan, dan dampak berada pada skor 4.',
+    ],
+  },
+]
+
 const MyReviews: React.FC = () => {
   return (
     <div className="space-y-6 text-neutral-800">
@@ -177,6 +207,45 @@ const MyReviews: React.FC = () => {
             <li>2. Lengkapi halaman ini dengan contoh <em>review personal</em> mendalam terhadap satu karya (UTS-1/UTS-3).</li>
             <li>3. Revisi minor desain untuk memastikan keseragaman warna dan navigasi sebelum UAS.</li>
           </ol>
+        </div>
+
+        <div className="mt-12 glass-effect rounded-xl border border-neutral-200 p-6">
+          <h3 className="text-2xl font-semibold text-neutral-900">Penugasan Peer 1, Peer 2 dan Peer 3</h3>
+          <p className="mt-3 text-base leading-relaxed text-neutral-700 sm:text-lg">
+            Ringkasan penilaian rekan dapat diunduh langsung dalam format Excel:{' '}
+            <a
+              href="https://docs.google.com/spreadsheets/d/1tm8-xGg4-LD-tEXYxDRhqE44ZylWuNRp/export?format=xlsx"
+              className="font-semibold text-primary-700 underline hover:text-primary-600"
+            >
+              Unduh penilaian peer (XLSX)
+            </a>
+            .
+          </p>
+          <div className="mt-6 grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
+            {peerAssessments.map((peer) => (
+              <div
+                key={peer.nim}
+                className="flex h-full flex-col rounded-lg border border-neutral-200 bg-white/80 p-4 shadow-sm backdrop-blur"
+              >
+                <div className="mb-2 flex items-baseline justify-between gap-2">
+                  <h4 className="text-lg font-semibold text-neutral-900">{peer.name}</h4>
+                  <span className="text-sm font-medium text-neutral-500">{peer.nim}</span>
+                </div>
+                <p className="mb-3 text-sm text-neutral-700">{peer.summary}</p>
+                <ul className="mt-2 space-y-2 text-sm leading-relaxed text-neutral-700">
+                  {peer.highlights.map((highlight, index) => (
+                    <li key={index} className="flex gap-2">
+                      <span
+                        className="mt-1 inline-block h-2 w-2 flex-shrink-0 rounded-full bg-primary-500"
+                        aria-hidden="true"
+                      />
+                      <span>{highlight}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>
