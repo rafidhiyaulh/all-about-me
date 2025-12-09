@@ -35,12 +35,19 @@ const MyInnovations: React.FC = () => {
           Aku membayangkannya seperti pasar yang hidup: kebutuhan dipajang, karya pengetahuan dipertukarkan, dan rasa “menciptakan nilai”
           hadir pada semua pihak. AI di sini membantu kurasi (akurasi, bias) dan personalisasi, tapi nilai lahir dari kolaborasi manusia.
         </p>
-        <p>
-          Jika harus memulai besok: 1) rilis tantangan nyata (contoh: identifikasi keluarga rentan putus sekolah di satu kecamatan);
-          2) buka submissions artefak; 3) kurasi bersama warga dan ahli etika AI; 4) pilih karya terbaik, dokumentasikan, dan terapkan
-          di lapangan; 5) ukur dampak (berapa keluarga terbantu, apakah bias menurun). Inilah cara inovasi nilai jadi sistem yang membangun
-          kapasitas komunikasi dan tindakan, bukan sekadar demo teknologi.
-        </p>
+        <div className="space-y-2">
+          <p>Langkah awal yang kubayangkan:</p>
+          <ol className="list-decimal list-inside space-y-1">
+            <li>Rilis tantangan nyata (contoh: identifikasi keluarga rentan putus sekolah di satu kecamatan).</li>
+            <li>Buka submissions artefak.</li>
+            <li>Kurasi bersama warga dan ahli etika AI.</li>
+            <li>Pilih karya terbaik, dokumentasikan, dan terapkan di lapangan.</li>
+            <li>Ukur dampak: berapa keluarga terbantu, apakah bias menurun.</li>
+          </ol>
+          <p>
+            Dengan alur ini, inovasi nilai jadi sistem yang membangun kapasitas komunikasi dan tindakan, bukan sekadar demo teknologi.
+          </p>
+        </div>
       </div>
     </div>
   )
