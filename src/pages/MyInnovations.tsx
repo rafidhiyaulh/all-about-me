@@ -10,42 +10,36 @@ const MyInnovations: React.FC = () => {
           UAS-3 My Innovations
         </HyperText>
         <p className="text-lg sm:text-xl leading-relaxed text-neutral-700">
-          Desain layanan yang membangun kapasitas dan efektivitas komunikasi KIPP: sebuah cara praktis agar ide, emosi,
-          dan keputusan antar tim bergerak jernih tanpa menekan sisi manusiawinya.
+          Inovasi nilai untuk “My Masterpiece”: sistem AI yang membangun kapasitas dan efektivitas komunikasi melawan kemiskinan global.
         </p>
       </div>
 
       <div className="space-y-4 text-base sm:text-lg leading-relaxed">
         <p>
-          Ide ini muncul waktu kami hampir kehabisan sabar karena rapat berakhir dengan “siapa yang paling benar”.
-          Aku ingin ada ruang yang mengajak kita kembali ke niat awal: memahami, bukan menang. Dari situ lahir
-          <Highlighter color="#a1a1aa">ClearPath Studio</Highlighter>—bukan aplikasi canggih, tapi cara sederhana
-          memetakan friksi, memilih intervensi yang manusiawi, dan melihat dampaknya tanpa drama.
+          “Inovasi nilai” bagiku berarti mencipta manfaat nyata, bukan sekadar fitur. Aku pinjam filosofi VALORAIZE: fokus pada nilai
+          luhur dan penciptaan nilai bersama. Masalahnya: kemiskinan ekstrem. Masterpiece-ku: platform AI yang memadukan data kemiskinan,
+          rekomendasi bantuan, dan pasar pengetahuan agar orang bukan hanya menerima, tapi ikut mencipta solusi.
         </p>
         <p>
-          Kanvasnya cuma tiga bagian: friksi yang dirasakan (otonomi vs koneksi, keterbukaan vs menjaga ruang),
-          intervensi yang disepakati (jadwal kejutan kecil untuk kebaruan, aturan berbagi yang aman), dan dampak yang
-          ingin dirasakan (iklim konfirmasi, kejelasan ekspektasi). Setiap langkah ditulis dengan kalimat sehari-hari
-          “apa, kenapa, untuk siapa”, supaya semua merasa diajak, bukan diarahkan.
+          Mekanismenya kupinjam dari “knowledge marketplace”: dosen atau fasilitator berperan sebagai <Highlighter color="#a1a1aa">pencipta
+          kebutuhan</Highlighter> (need creators) yang mengumumkan tantangan—misal pemetaan wilayah rawan putus sekolah. Mahasiswa,
+          komunitas, atau mitra jadi <Highlighter color="#a1a1aa">pencipta nilai</Highlighter> (value creators) yang menyetor artefak:
+          peta pengetahuan, prototipe sistem rujukan bantuan, atau model prediksi drop-out yang etis.
         </p>
         <p>
-          Materi KIPP masuk alami di sini: Knapp (tahap hubungan datang–pergi seperti initiating sampai terminating)
-          untuk memahami posisi relasi tim, dialektika relasional sebagai pengingat bahwa tarik-ulur itu normal, dan
-          gaya ekspresif vs instrumental supaya kita tahu kapan harus mendengar, kapan memberi solusi. Ritme rapatnya
-          pun ringan: buka dengan peta harapan, selipkan jeda “paraphrase check”, tutup dengan visualisasi positif.
-          Mulainya bisa dari template Docs/Notion; kalau laris, baru dipoles jadi web ringan.
+          Setiap artefak harus punya nilai nyata: bisa dipakai pemerintah daerah, LSM, atau warga. Yang “dibeli” (dipilih) diunggah
+          ke website sebagai sumber belajar dan diperbaiki iteratif. Inilah inovasi nilai: tidak berhenti di teori, tapi menghasilkan
+          produk pengetahuan yang dipakai ulang.
         </p>
         <p>
-          Nilai gunanya terasa ke semua pihak: anggota tim aman mengutarakan gaya bicara; fasilitator punya narasi
-          untuk mem-frame konflik sebagai energi, bukan ancaman; pemimpin bisa mencatat “apa yang berubah minggu ini”
-          tanpa spreadsheet rumit. Efek ke CPMK KIPP jelas: latihan merancang pesan yang jernih, mengelola ketegangan
-          dialektis, dan memberi umpan balik konfirmatif dalam situasi nyata.
+          Aku membayangkannya seperti pasar yang hidup: kebutuhan dipajang, karya pengetahuan dipertukarkan, dan rasa “menciptakan nilai”
+          hadir pada semua pihak. AI di sini membantu kurasi (akurasi, bias) dan personalisasi, tapi nilai lahir dari kolaborasi manusia.
         </p>
         <p>
-          Kalau harus mulai besok, aku ajak satu kelompok kecil: 30 menit memetakan friksi paling terasa, 20 menit
-          memilih intervensi ringan yang disetujui, 10 menit menulis narasi “apa-mengapa” untuk dibagikan di grup.
-          Seminggu kemudian kami cek apa yang lebih jernih. Dari kebiasaan kecil itu, ClearPath Studio tumbuh sebagai
-          layanan yang menjaga komunikasi tetap hangat, terukur, dan bernyawa.
+          Jika harus memulai besok: 1) rilis tantangan nyata (contoh: identifikasi keluarga rentan putus sekolah di satu kecamatan);
+          2) buka submissions artefak; 3) kurasi bersama warga dan ahli etika AI; 4) pilih karya terbaik, dokumentasikan, dan terapkan
+          di lapangan; 5) ukur dampak (berapa keluarga terbantu, apakah bias menurun). Inilah cara inovasi nilai jadi sistem yang membangun
+          kapasitas komunikasi dan tindakan, bukan sekadar demo teknologi.
         </p>
       </div>
     </div>

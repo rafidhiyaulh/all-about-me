@@ -10,43 +10,39 @@ const MyKnowledge: React.FC = () => {
           UAS-4 My Knowledge
         </HyperText>
         <p className="text-lg sm:text-xl leading-relaxed text-neutral-700">
-          Pengetahuan KIPP versi publik: kenapa hubungan terbentuk, bagaimana ia bergerak, dan cara merawatnya saat
-          ketegangan muncul.
+          Pengetahuan yang kupakai untuk “My Masterpiece”: memetakan dan membagikan pembelajaran tentang AI & sistem informasi melawan kemiskinan global.
         </p>
       </div>
 
       <div className="space-y-4 text-base sm:text-lg leading-relaxed">
         <p>
-          Semua bermula dari pertanyaan sederhana: <Highlighter color="#a1a1aa">mengapa kita membentuk hubungan?</Highlighter>{' '}
-          Jawabannya sering sesederhana rasa nyaman, kesamaan, atau hadiah kecil berupa dukungan. KIPP mengajarkan
-          bahwa kedekatan lahir dari penampilan, kesamaan nilai, komplementaritas, ganjaran, kompetensi, kedekatan,
-          dan keberanian berbagi diri.
+          Pengetahuan bagiku adalah deskripsi bahasa tentang realitas. Realitas yang kuhadapi: kemiskinan global—700 juta orang di
+          bawah garis USD 2,15/hari. Untuk bergerak di era AI, pengetahuan harus terstruktur, bisa diajarkan, dan bisa dipakai
+          memecahkan masalah sosial.
         </p>
         <p>
-          Lalu hubungan berjalan mengikuti <Highlighter color="#a1a1aa">peta Knapp</Highlighter>: tahap datang (initiating,
-          experimenting, intensifying, integrating, bonding) dan pergi (differentiating, circumscribing, stagnating,
-          avoiding, terminating). Peta ini mengingatkan kita bahwa jeda atau akhir juga fase normal, bukan tanda gagal.
+          Aku memetakan jenis pengetahuan: alam (data fisik, geospasial), sosial (pola kerentanan, budaya), dan aplikatif
+          (jembatan manusia–teknologi). Ketiganya dibutuhkan untuk merancang AI yang adil: dari data valid hingga prosedur intervensi.
         </p>
         <p>
-          Di tengah perjalanan, ada <Highlighter color="#a1a1aa">tiga tarikan dialektis</Highlighter> yang selalu hadir:
-          otonomi vs koneksi, keterbukaan vs menjaga ruang, prediktabilitas vs kebaruan. Kuncinya bukan menghapus
-          ketegangan, tapi menari dengannya: kadang seimbang, kadang integrasi kreatif, kadang cukup mengakui ia ada.
+          Taksonomi Bloom kupakai sebagai tangga: mengingat definisi kemiskinan, memahami klasifikasi wilayah rentan, menerapkan
+          model prediksi, menganalisis penyebab drop-out, menyintesis solusi bantuan, mengevaluasi bias, hingga mencipta alat baru.
+          Level 1–7 jadi panduan kapan pengetahuan masih hafalan, kapan sudah siap jadi produk.
         </p>
         <p>
-          Ekspektasi dan kepuasan jadi bahan bakar. Saat harapan dan realita bertemu, hubungan terasa ringan; saat jauh
-          berbeda, friksi muncul. Di sinilah komunikasi publik-friendly dibutuhkan: jelaskan harapan, dengarkan emosi,
-          dan pakai kontras “apa adanya” vs “apa bisa jadi” untuk memantik aksi yang lebih baik.
+          Visualisasinya dua jenis peta: <Highlighter color="#a1a1aa">Peta Pengetahuan Primitif</Highlighter> untuk fakta dan definisi
+          (apa itu garis kemiskinan, indikator kesehatan), dan <Highlighter color="#a1a1aa">Peta Pengetahuan Aplikatif</Highlighter>
+          untuk proses (bagaimana menyalurkan bantuan, bagaimana mitigasi bias AI). Peta primitif menguji level 1–2; peta aplikatif
+          menguji level 3–6.
         </p>
         <p>
-          Buat saya, pengetahuan ini berguna karena praktis: gunakan pesan yang mengonfirmasi (aku mendengar, aku paham,
-          aku dukung), hindari defensif, dan paraphrasing sebelum memberi solusi. Visualisasi positif sebelum percakapan
-          sulit juga membantu menurunkan panas.
+          Produk pengetahuan yang ingin kulahirkan: peta primitif, peta pemecahan masalah, jurnal reflektif tentang etika AI,
+          dan prototipe yang bisa dipakai warga/LSM/pemerintah. Ini bukan sekadar tugas kuliah, tapi blueprint yang membantu
+          orang memanfaatkan teknologi untuk keluar dari lingkaran kemiskinan.
         </p>
         <p>
-          Jika harus membaginya ke masyarakat: mulai dengan cerita sederhana tentang tarikan otonomi–koneksi, tunjukkan
-          peta Knapp sebagai jalur datang–pergi, lalu berikan tiga alat kecil: jadwalkan ruang sendiri dan ruang bersama,
-          sepakati batas cerita yang boleh dibagi, dan sisipkan kejutan kecil agar hubungan tetap segar. Pengetahuan
-          KIPP jadi terasa dekat, bukan materi kelas yang kaku.
+          Cerita ini untuk publik: pengetahuan bukan tumpukan istilah, tapi jalan yang memandu kita mengangkat beban sosial
+          dengan sistem dan AI. Semakin jelas petanya, semakin banyak orang bisa ikut berjalan.
         </p>
       </div>
     </div>

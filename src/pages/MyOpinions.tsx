@@ -1,6 +1,5 @@
 import React from 'react'
 import HyperText from '../components/HyperText'
-import Highlighter from '../components/Highlighter'
 
 const MyOpinions: React.FC = () => {
   return (
@@ -10,36 +9,35 @@ const MyOpinions: React.FC = () => {
           UAS-2 My Opinions
         </HyperText>
         <p className="text-lg sm:text-xl leading-relaxed text-neutral-700">
-          Opini pribadi tentang kenapa keputusan yang jernih dan manusiawi adalah wujud empati—bukan sekadar hasil perhitungan.
+          Opini tentang “My Masterpiece”: bagaimana AI dan sistem informasi bisa memutus rantai kemiskinan global.
         </p>
       </div>
 
       <div className="space-y-4 text-base sm:text-lg leading-relaxed">
         <p>
-          Pernah ada masa ketika keputusan diambil tanpa penjelasan yang jernih. Tim jadi bertanya-tanya, merasa dikendalikan, dan
-          kepercayaannya turun. Saat aku ikut merapikan alur permintaan di Telkomsel, kami menata jalur kerja dengan dua asisten kecil
-          dan menjelaskan <Highlighter color="#a1a1aa">apa yang berubah</Highlighter> dan <Highlighter color="#a1a1aa">kenapa penting</Highlighter>.
-          Begitu transparan, ketegangan turun; orang merasa diajak, bukan disuruh.
+          Opini, kata kerangka yang kupakai, adalah rebusan informasi, nilai, perasaan, dan pengalaman dalam budaya tertentu. Rebusan
+          ini kental, kadang bias, tapi harus bisa diubah bila bahan baru datang. Pendapatku: AI untuk kemiskinan harus berangkat dari
+          data keras (700 juta orang di bawah USD 2,15/hari) dan nilai kemanusiaan, bukan sekadar efisiensi.
         </p>
         <p>
-          Di ITB Career Center, rute karier yang semula berupa tabel angka kubalik menjadi cerita singkat: ini pilihanmu, ini alasannya,
-          ini langkah pertama yang masuk akal. Mahasiswa bilang mereka lebih tenang karena tahu arah. Informasi yang ramah manusia
-          menurunkan “biaya emosi” dan membuat keberanian tumbuh.
+          Sudut pandangku pribadi: AI tidak boleh hanya memetakan “siapa miskin”, tapi juga merekomendasikan dukungan yang layak dan
+          transparan. Sudut pandang umumku: sistem ini harus akuntabel ke publik, agar kepercayaan tumbuh dan bantuan tepat sasaran.
+          Dua sudut itu harus diberi sinyal jelas supaya orang tahu dari kacamata mana aku bicara.
         </p>
         <p>
-          Simutrade menguatkan pandangan itu. UKM biasanya waswas memilih mitra dagang berkelanjutan. Ketika informasi disajikan jujur
-          dan mudah dicerna, mereka merasa diperlakukan fair. Setelah satu UKM berbagi dampak baiknya, UKM lain ikut mencoba. Di situ
-          aku melihat opini yang kukemukakan: <Highlighter color="#a1a1aa">data yang ramah manusia adalah bentuk empati</Highlighter>.
+          Aku siap mengubah pendapat jika ada informasi baru—misalnya jika model prediksi memicu bias terhadap wilayah tertentu, atau
+          jika nilai komunitas lokal menolak pendekatan tertentu. Opini yang baik, menurutku, lentur: kuat karena data, rendah hati
+          karena mau mendengar.
         </p>
         <p>
-          Aku percaya keputusan yang menarik bukan hanya yang tepat, tetapi yang membuat orang merasa dihargai. Kita bisa memulai dengan
-          satu kalimat “apa” dan satu kalimat “mengapa”, lalu tunjukkan bukti kecil yang bisa dipahami. Jika kita konsisten, keputusan
-          itu bukan hanya meyakinkan, tapi juga menggerakkan emosi dan nalar.
+          Menangani perbedaan pendapat berarti meletakkan opini berdampingan, mencari dasar selisih, lalu mencoba rekonsiliasi. Jika
+          tak bisa, setidaknya ada kesepakatan untuk berbeda. Dalam konteks AI dan kemiskinan, itu berarti dialog antara teknolog,
+          pemerintah, LSM, dan warga terdampak harus jujur soal risiko, manfaat, dan nilai yang dijaga.
         </p>
         <p>
-          Jika aku diminta memberi ajakan: coba ubah satu laporanmu jadi cerita singkat. Katakan masalahnya apa, siapa yang terdampak,
-          pilihan sederhana apa yang tersedia, dan makna praktisnya. Lihat bagaimana percakapan berubah: dari keraguan jadi rasa ingin tahu,
-          dari pasif jadi partisipasi. Bagiku, itulah kekuatan opini yang memikat, informatif, meyakinkan, dan melibatkan.
+          Sikap yang kuhindari: merasa paling pintar, menjadi penjaga nilai tunggal, atau terlalu rasional sampai tak berani memutuskan.
+          Sikap yang kupilih: pendapat yang tegas tapi siap direvisi. Analogi yang kupakai: opiniku adalah masakan rumahan—bahan-bahannya
+          harus berkualitas, resepnya bisa disesuaikan, dan rasanya boleh berubah ketika selera publik (nilai) dan bahan (data) berganti.
         </p>
       </div>
     </div>
