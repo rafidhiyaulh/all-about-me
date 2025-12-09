@@ -23,8 +23,6 @@ const navigation = [
   { path: '/uas-5', label: 'UAS-5 My Professional Reviews', icon: CheckSquare },
 ]
 
-const avatarSrc = `${import.meta.env.BASE_URL}favicon.svg`
-
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   const location = useLocation()
   const [isNavOpen, setIsNavOpen] = useState(false)
@@ -39,9 +37,8 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         {/* Mobile header */}
         <header className="sticky top-0 z-30 flex items-center justify-between border-b border-neutral-200 bg-white/90 px-4 py-3 shadow-sm backdrop-blur md:hidden">
           <div className="flex items-center gap-3">
-            <img src={avatarSrc} alt="Rafi" className="w-10 h-10 rounded-md shadow-sm" />
             <div>
-              <p className="text-sm font-semibold text-neutral-800">Muhammad Rafi</p>
+              <p className="text-sm font-semibold text-neutral-800">Muhammad Rafi Dhiyaulhaq</p>
               <p className="text-xs text-neutral-500">Portfolio Asesmen KIPP</p>
             </div>
           </div>
@@ -105,15 +102,14 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         >
           <div className="p-8 h-full flex flex-col">
             <div className="flex items-center gap-3 mb-6">
-              <img src={avatarSrc} alt="Rafi" className="w-12 h-12 rounded-md shadow-sm ring-1 ring-neutral-200" />
               <motion.h1 
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2 }}
-              className="text-2xl font-bold text-neutral-900 mb-0 bg-gradient-to-r from-primary-500 to-primary-700 bg-clip-text text-transparent"
-            >
-              Muhammad Rafi Dhiyaulhaq
-            </motion.h1>
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.2 }}
+                className="text-2xl font-bold text-neutral-900 mb-0 bg-gradient-to-r from-primary-500 to-primary-700 bg-clip-text text-transparent"
+              >
+                Muhammad Rafi Dhiyaulhaq
+              </motion.h1>
             </div>
             
             <nav className="space-y-3 flex-1 overflow-y-auto pr-1">
