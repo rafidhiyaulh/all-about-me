@@ -1,78 +1,21 @@
 # Portfolio Muhammad Rafi Dhiyaulhaq
 
-Modern React + TypeScript portfolio that documents work for mata kuliah **Komunikasi Interpersonal dan Publik (II-2100)**.
+Portofolio Komunikasi Interpersonal & Publik (II-2100) milik Muhammad Rafi Dhiyaulhaq. Semua halaman UTS dan UAS bisa diakses langsung di:
 
-## ✨ Fitur Utama
+👉 https://rafidhiyaulh.github.io/all-about-me/
 
-- **Zinc monochrome theme** dengan aksen `HyperText` dan teks highlight untuk penekanan konten penting.
-- **Lens zoom** pada seluruh gambar sehingga foto dapat diperbesar secara interaktif.
-- **Scroll velocity marquee** yang menegaskan nilai-nilai inti pada halaman utama.
-- Navigasi sidebar yang tetap di sisi kiri untuk lima halaman UTS dan halaman sambutan.
-- Responsif penuh (mobile → desktop) menggunakan Tailwind CSS.
-- Build modern dengan React 18, TypeScript, dan Vite.
+Isi situs:
+- Selamat Datang
+- UTS-1 All About Me
+- UTS-2 My Songs for You
+- UTS-3 My Stories for You
+- UTS-4 My SHAPE
+- UTS-5 My Personal Reviews
+- UAS-1 My Concepts
+- UAS-2 My Opinions
+- UAS-3 My Innovations
+- UAS-4 My Knowledge
 
-## 📄 Halaman Konten
-
-- **Selamat Datang** – pengantar, nilai inti, marquee nilai komunikasi.
-- **UTS-1 All About Me** – profil pribadi, prinsip komunikasi, highlight konten penting.
-- **UTS-2 My Songs for You** – lagu “Better Steps”, video YouTube, dan lirik lengkap.
-- **UTS-3 My Stories for You** – tiga cerita reflektif dengan foto yang bisa di-zoom.
-- **UTS-4 My SHAPE** – piagam diri, bagan SHAPE, dan identitas naratif.
-- **UTS-5 My Personal Reviews** – metode self-assessment, skor PDF, dan rekomendasi perbaikan.
-- **UAS-1 My Concepts** – fenomena “echo kindness” dengan alur friksi → intervensi → dampak dan langkah aksi cepat.
-- **UAS-2 My Opinions** – opini tentang keputusan yang jernih dan manusiawi sebagai wujud empati, ditulis dalam format cerita.
-- **UAS-3 My Innovations** – desain layanan ClearPath Studio untuk kapasitas komunikasi KIPP: peta friksi-intervensi-dampak yang hangat dan terukur.
-- **UAS-4 My Knowledge** – pengetahuan KIPP untuk publik: peta Knapp, tarikan dialektis, dan alat komunikasi ramah sehari-hari.
-
-## 🚀 Cara Menjalankan
-
-1. **Instal dependensi**
-   ```bash
-   npm install
-   ```
-2. **Salin aset konten**
-   ```text
-   public/images/      ← salin seluruh folder gambar dari proyek Quarto
-   public/skor_uts.pdf ← salin file PDF skor UTS
-   ```
-3. **Mode pengembangan**
-   ```bash
-   npm run dev
-   ```
-4. **Build produksi**
-   ```bash
-   npm run build
-   ```
-
-## 🗂️ Struktur Proyek
-
-```
-src/
-├── components/
-│   ├── Layout.tsx          # Kerangka utama + sidebar
-│   ├── QuickLinks.tsx      # Kartu navigasi cepat
-│   ├── FeaturedPanel.tsx   # Panel highlight di halaman selamat datang
-│   ├── AtAGlance.tsx       # Kartu ringkas profil di UTS-1
-│   ├── Lyrics.tsx          # Penyaji lirik dan struktur lagu
-│   ├── StoryImage.tsx      # Wrapper gambar dengan Lens zoom + caption
-│   ├── HyperText.tsx       # Komponen heading berwarna zinc dinamis
-│   ├── Highlighter.tsx     # Penegasan teks (highlight / underline)
-│   ├── ScrollVelocity.tsx  # Marquee kecepatan untuk nilai inti
-│   └── Lens.tsx            # Efek pembesaran gambar ala Magic UI
-├── pages/                  # Halaman konten UTS
-├── App.tsx                 # Routing React Router
-├── main.tsx                # Entry point React
-└── index.css               # Gaya global + utilitas Tailwind
-```
-
-## 🛠️ Teknologi
-
-- **React 18** & **TypeScript**
-- **Vite** sebagai dev server & bundler cepat
-- **Tailwind CSS** + **DaisyUI** untuk styling utility-first
-- **React Router DOM** untuk navigasi
-- **Lucide React** untuk ikon yang ringan
-
----
-
-Repositori ini menjadi arsip digital resmi untuk tugas portfolio II-2100. Silakan gunakan skrip di atas ketika ingin menjalankan atau melakukan build ulang.
+Catatan teknis singkat:
+- Basis URL sudah diset ke `/all-about-me/` agar cocok dengan GitHub Pages.
+- Output build ada di folder `docs/` (jalankan `npm run build` lalu commit/push agar perubahan tampil di Pages).
