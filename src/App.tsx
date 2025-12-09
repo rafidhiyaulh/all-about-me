@@ -7,6 +7,10 @@ import MySongs from './pages/MySongs'
 import MyStories from './pages/MyStories'
 import MyShapes from './pages/MyShapes'
 import MyReviews from './pages/MyReviews'
+import MyConcepts from './pages/MyConcepts'
+import MyOpinions from './pages/MyOpinions'
+import MyInnovations from './pages/MyInnovations'
+import MyKnowledge from './pages/MyKnowledge'
 
 const RestoreRoute = () => {
   const navigate = useNavigate()
@@ -37,6 +41,10 @@ function App() {
           <Route path="/uts-3" element={<MyStories />} />
           <Route path="/uts-4" element={<MyShapes />} />
           <Route path="/uts-5" element={<MyReviews />} />
+          <Route path="/uas-1" element={<MyConcepts />} />
+          <Route path="/uas-2" element={<MyOpinions />} />
+          <Route path="/uas-3" element={<MyInnovations />} />
+          <Route path="/uas-4" element={<MyKnowledge />} />
         </Routes>
       </Layout>
     </Router>

@@ -1,6 +1,6 @@
 import React, { ReactNode, useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { Home, User, Music, BookOpen, Heart, FileText, Menu, X } from 'lucide-react'
+import { Home, User, Music, BookOpen, Heart, FileText, Menu, X, Lightbulb, Megaphone, Sparkles, Library } from 'lucide-react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { cn } from '../lib/utils'
 import ScrollArea from './ScrollArea'
@@ -16,6 +16,10 @@ const navigation = [
   { path: '/uts-3', label: 'UTS-3 My Stories for You', icon: BookOpen },
   { path: '/uts-4', label: 'UTS-4 My SHAPE', icon: Heart },
   { path: '/uts-5', label: 'UTS-5 My Personal Reviews', icon: FileText },
+  { path: '/uas-1', label: 'UAS-1 My Concepts', icon: Lightbulb },
+  { path: '/uas-2', label: 'UAS-2 My Opinions', icon: Megaphone },
+  { path: '/uas-3', label: 'UAS-3 My Innovations', icon: Sparkles },
+  { path: '/uas-4', label: 'UAS-4 My Knowledge', icon: Library },
 ]
 
 const avatarSrc = `${import.meta.env.BASE_URL}favicon.svg`
@@ -111,7 +115,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             </motion.h1>
             </div>
             
-            <nav className="space-y-3 flex-1">
+            <nav className="space-y-3 flex-1 overflow-y-auto pr-1">
               {navigation.map((item, index) => {
                 const Icon = item.icon
                 const isActive = location.pathname === item.path

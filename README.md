@@ -19,6 +19,10 @@ Modern React + TypeScript portfolio that documents work for mata kuliah **Komuni
 - **UTS-3 My Stories for You** – tiga cerita reflektif dengan foto yang bisa di-zoom.
 - **UTS-4 My SHAPE** – piagam diri, bagan SHAPE, dan identitas naratif.
 - **UTS-5 My Personal Reviews** – metode self-assessment, skor PDF, dan rekomendasi perbaikan.
+- **UAS-1 My Concepts** – fenomena “echo kindness” dengan alur friksi → intervensi → dampak dan langkah aksi cepat.
+- **UAS-2 My Opinions** – opini tentang keputusan yang jernih dan manusiawi sebagai wujud empati, ditulis dalam format cerita.
+- **UAS-3 My Innovations** – desain layanan ClearPath Studio untuk kapasitas komunikasi KIPP: peta friksi-intervensi-dampak yang hangat dan terukur.
+- **UAS-4 My Knowledge** – pengetahuan KIPP untuk publik: peta Knapp, tarikan dialektis, dan alat komunikasi ramah sehari-hari.
 
 ## 🚀 Cara Menjalankan
 
