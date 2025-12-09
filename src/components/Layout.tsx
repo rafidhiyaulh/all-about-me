@@ -1,6 +1,6 @@
 import React, { ReactNode, useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { Home, User, Music, BookOpen, Heart, FileText, Menu, X, Lightbulb, Megaphone, Sparkles, Library } from 'lucide-react'
+import { Home, User, Music, BookOpen, Heart, FileText, Menu, X, Lightbulb, Megaphone, Sparkles, Library, CheckSquare } from 'lucide-react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { cn } from '../lib/utils'
 import ScrollArea from './ScrollArea'
@@ -20,6 +20,7 @@ const navigation = [
   { path: '/uas-2', label: 'UAS-2 My Opinions', icon: Megaphone },
   { path: '/uas-3', label: 'UAS-3 My Innovations', icon: Sparkles },
   { path: '/uas-4', label: 'UAS-4 My Knowledge', icon: Library },
+  { path: '/uas-5', label: 'UAS-5 My Professional Reviews', icon: CheckSquare },
 ]
 
 const avatarSrc = `${import.meta.env.BASE_URL}favicon.svg`

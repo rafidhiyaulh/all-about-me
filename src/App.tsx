@@ -11,6 +11,7 @@ import MyConcepts from './pages/MyConcepts'
 import MyOpinions from './pages/MyOpinions'
 import MyInnovations from './pages/MyInnovations'
 import MyKnowledge from './pages/MyKnowledge'
+import MyProfessionalReviews from './pages/MyProfessionalReviews'
 
 const RestoreRoute = () => {
   const navigate = useNavigate()
@@ -45,6 +46,7 @@ function App() {
           <Route path="/uas-2" element={<MyOpinions />} />
           <Route path="/uas-3" element={<MyInnovations />} />
           <Route path="/uas-4" element={<MyKnowledge />} />
+          <Route path="/uas-5" element={<MyProfessionalReviews />} />
         </Routes>
       </Layout>
     </Router>

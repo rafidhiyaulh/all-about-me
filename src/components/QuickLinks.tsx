@@ -8,6 +8,11 @@ const QuickLinks: React.FC = () => {
     { title: 'UTS-3 My Stories for You', to: '/uts-3' },
     { title: 'UTS-4 My SHAPE', to: '/uts-4' },
     { title: 'UTS-5 My Personal Reviews', to: '/uts-5' },
+    { title: 'UAS-1 My Concepts', to: '/uas-1' },
+    { title: 'UAS-2 My Opinions', to: '/uas-2' },
+    { title: 'UAS-3 My Innovations', to: '/uas-3' },
+    { title: 'UAS-4 My Knowledge', to: '/uas-4' },
+    { title: 'UAS-5 My Professional Reviews', to: '/uas-5' },
   ]
 
   return (
