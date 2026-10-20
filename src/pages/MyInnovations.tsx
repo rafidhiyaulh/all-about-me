@@ -4,26 +4,26 @@ import Highlighter from '../components/Highlighter'
 
 const MyInnovations: React.FC = () => {
   return (
-    <div className="space-y-6 text-neutral-800">
+    <div className="space-y-6">
       <div className="mb-4 text-center">
-        <HyperText as="h1" className="text-4xl sm:text-5xl md:text-6xl font-bold mb-3">
+        <HyperText as="h1" className="mb-3">
           UAS-3 My Innovations
         </HyperText>
-        <p className="text-lg sm:text-xl leading-relaxed text-neutral-700">
+        <p className="subtitle leading-relaxed" style={{ color: 'var(--muted)' }}>
           Inovasi nilai untuk “My Masterpiece”: sistem AI yang membangun kapasitas dan efektivitas komunikasi melawan kemiskinan global.
         </p>
       </div>
 
-      <div className="space-y-4 text-base sm:text-lg leading-relaxed">
+      <div className="card space-y-4 p-6 text-base leading-relaxed" style={{ color: 'var(--ink2)' }}>
         <p>
           “Inovasi nilai” bagiku berarti mencipta manfaat nyata, bukan sekadar fitur. Aku pinjam filosofi VALORAIZE: fokus pada nilai
           luhur dan penciptaan nilai bersama. Masalahnya: kemiskinan ekstrem. Masterpiece-ku: platform AI yang memadukan data kemiskinan,
           rekomendasi bantuan, dan pasar pengetahuan agar orang bukan hanya menerima, tapi ikut mencipta solusi.
         </p>
         <p>
-          Mekanismenya kupinjam dari “knowledge marketplace”: dosen atau fasilitator berperan sebagai <Highlighter color="#a1a1aa">pencipta
-          kebutuhan</Highlighter> (need creators) yang mengumumkan tantangan—misal pemetaan wilayah rawan putus sekolah. Mahasiswa,
-          komunitas, atau mitra jadi <Highlighter color="#a1a1aa">pencipta nilai</Highlighter> (value creators) yang menyetor artefak:
+          Mekanismenya kupinjam dari “knowledge marketplace”: dosen atau fasilitator berperan sebagai <Highlighter>pencipta
+          kebutuhan</Highlighter> (need creators) yang mengumumkan tantangan, misal pemetaan wilayah rawan putus sekolah. Mahasiswa,
+          komunitas, atau mitra jadi <Highlighter>pencipta nilai</Highlighter> (value creators) yang menyetor artefak:
           peta pengetahuan, prototipe sistem rujukan bantuan, atau model prediksi drop-out yang etis.
         </p>
         <p>

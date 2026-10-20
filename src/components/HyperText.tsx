@@ -8,11 +8,8 @@ interface HyperTextProps extends React.HTMLAttributes<HTMLElement> {
 const HyperText: React.FC<HyperTextProps> = ({ as: Component = 'span', className, children, ...props }) => {
   return (
     <Component
-      className={cn(
-        'relative inline-block bg-clip-text text-transparent transition-colors duration-300',
-        'bg-gradient-to-r from-neutral-700 via-neutral-500 to-neutral-700 hover:from-neutral-900 hover:to-neutral-900',
-        className,
-      )}
+      className={cn('page-title', className)}
+      style={{ color: 'var(--ink)' }}
       {...props}
     >
       {children}

@@ -24,8 +24,9 @@ export const ScrollVelocityRow: React.FC<ScrollVelocityRowProps> = ({
 }) => {
   return (
     <div
-      className={cn('flex w-full whitespace-nowrap py-2 text-neutral-500', className)}
+      className={cn('flex w-full whitespace-nowrap py-2', className)}
       style={{
+        color: 'var(--muted)',
         animation: `scroll-velocity ${Math.max(1, 60 / Math.abs(baseVelocity))}s linear infinite`,
         animationDirection: direction === -1 ? 'reverse' : 'normal',
       }}

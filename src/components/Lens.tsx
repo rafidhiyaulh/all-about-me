@@ -99,12 +99,14 @@ export const Lens: React.FC<LensProps> = ({
       })}
       {(cursor || isStatic) && lensPosition && (
         <div
-          className="pointer-events-none absolute rounded-full border border-neutral-300/80 shadow-xl transition-opacity duration-150"
+          className="pointer-events-none absolute rounded-full shadow-lift transition-opacity duration-150"
           style={{
             width: lensSize,
             height: lensSize,
             left: lensPosition.left,
             top: lensPosition.top,
+            border: '2px solid var(--panel)',
+            boxShadow: '0 0 0 1px var(--border-strong), var(--shadow-lift)',
             backgroundImage: `url(${onlyChild.props.src ?? ''})`,
             backgroundRepeat: 'no-repeat',
             backgroundSize,

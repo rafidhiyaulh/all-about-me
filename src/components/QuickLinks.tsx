@@ -16,18 +16,21 @@ const QuickLinks: React.FC = () => {
   ]
 
   return (
-    <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+    <div className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
       {links.map((l) => (
         <Link
           key={l.to}
           to={l.to}
-          className="flex items-center justify-between gap-4 rounded-xl border border-neutral-200 bg-white p-4 shadow transition hover:border-neutral-300 hover:shadow-md"
+          className="card flex items-center justify-between gap-4 p-4 transition-colors"
+          style={{ borderColor: 'var(--border)' }}
+          onMouseEnter={(e) => { e.currentTarget.style.borderColor = 'var(--border-strong)' }}
+          onMouseLeave={(e) => { e.currentTarget.style.borderColor = 'var(--border)' }}
         >
           <div>
-            <div className="text-xs uppercase tracking-wide text-neutral-500">Go to</div>
-            <div className="text-base font-semibold text-neutral-900 sm:text-lg">{l.title}</div>
+            <div className="eyebrow">Go to</div>
+            <div className="mt-0.5 font-semibold" style={{ color: 'var(--ink)' }}>{l.title}</div>
           </div>
-          <span className="inline-flex items-center rounded-lg border border-neutral-300 px-3 py-1 text-sm font-semibold text-neutral-700 transition hover:border-neutral-400">
+          <span className="btn btn-outline" style={{ padding: '5px 12px', fontSize: '12px' }}>
             Open
           </span>
         </Link>

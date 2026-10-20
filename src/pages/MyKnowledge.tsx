@@ -4,19 +4,19 @@ import Highlighter from '../components/Highlighter'
 
 const MyKnowledge: React.FC = () => {
   return (
-    <div className="space-y-6 text-neutral-800">
+    <div className="space-y-6">
       <div className="mb-4 text-center">
-        <HyperText as="h1" className="text-4xl sm:text-5xl md:text-6xl font-bold mb-3">
+        <HyperText as="h1" className="mb-3">
           UAS-4 My Knowledge
         </HyperText>
-        <p className="text-lg sm:text-xl leading-relaxed text-neutral-700">
+        <p className="subtitle leading-relaxed" style={{ color: 'var(--muted)' }}>
           Pengetahuan yang kupakai untuk “My Masterpiece”: memetakan dan membagikan pembelajaran tentang AI & sistem informasi melawan kemiskinan global.
         </p>
       </div>
 
-      <div className="space-y-4 text-base sm:text-lg leading-relaxed">
+      <div className="card space-y-4 p-6 text-base leading-relaxed" style={{ color: 'var(--ink2)' }}>
         <p>
-          Pengetahuan bagiku adalah deskripsi bahasa tentang realitas. Realitas yang kuhadapi: kemiskinan global—700 juta orang di
+          Pengetahuan bagiku adalah deskripsi bahasa tentang realitas. Realitas yang kuhadapi: kemiskinan global, 700 juta orang di
           bawah garis USD 2,15/hari. Untuk bergerak di era AI, pengetahuan harus terstruktur, bisa diajarkan, dan bisa dipakai
           memecahkan masalah sosial.
         </p>
@@ -30,8 +30,8 @@ const MyKnowledge: React.FC = () => {
           Level 1–7 jadi panduan kapan pengetahuan masih hafalan, kapan sudah siap jadi produk.
         </p>
         <p>
-          Visualisasinya dua jenis peta: <Highlighter color="#a1a1aa">Peta Pengetahuan Primitif</Highlighter> untuk fakta dan definisi
-          (apa itu garis kemiskinan, indikator kesehatan), dan <Highlighter color="#a1a1aa">Peta Pengetahuan Aplikatif</Highlighter>
+          Visualisasinya dua jenis peta: <Highlighter>Peta Pengetahuan Primitif</Highlighter> untuk fakta dan definisi
+          (apa itu garis kemiskinan, indikator kesehatan), dan <Highlighter>Peta Pengetahuan Aplikatif</Highlighter>
           untuk proses (bagaimana menyalurkan bantuan, bagaimana mitigasi bias AI). Peta primitif menguji level 1–2; peta aplikatif
           menguji level 3–6.
         </p>

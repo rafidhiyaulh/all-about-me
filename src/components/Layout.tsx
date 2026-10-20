@@ -1,170 +1,162 @@
 import React, { ReactNode, useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { Home, User, Music, BookOpen, Heart, FileText, Menu, X, Lightbulb, Megaphone, Sparkles, Library, CheckSquare } from 'lucide-react'
-import { AnimatePresence, motion } from 'framer-motion'
-import { cn } from '../lib/utils'
-import ScrollArea from './ScrollArea'
+import { useTheme } from '../context/ThemeContext'
 
 interface LayoutProps {
   children: ReactNode
 }
 
-const navigation = [
-  { path: '/', label: 'Selamat Datang', icon: Home },
-  { path: '/uts-1', label: 'UTS-1 All About Me', icon: User },
-  { path: '/uts-2', label: 'UTS-2 My Songs for You', icon: Music },
-  { path: '/uts-3', label: 'UTS-3 My Stories for You', icon: BookOpen },
-  { path: '/uts-4', label: 'UTS-4 My SHAPE', icon: Heart },
-  { path: '/uts-5', label: 'UTS-5 My Personal Reviews', icon: FileText },
-  { path: '/uas-1', label: 'UAS-1 My Concepts', icon: Lightbulb },
-  { path: '/uas-2', label: 'UAS-2 My Opinions', icon: Megaphone },
-  { path: '/uas-3', label: 'UAS-3 My Innovations', icon: Sparkles },
-  { path: '/uas-4', label: 'UAS-4 My Knowledge', icon: Library },
-  { path: '/uas-5', label: 'UAS-5 My Professional Reviews', icon: CheckSquare },
+const utsLinks = [
+  { path: '/uts-1', label: 'UTS-1 All About Me' },
+  { path: '/uts-2', label: 'UTS-2 My Songs for You' },
+  { path: '/uts-3', label: 'UTS-3 My Stories for You' },
+  { path: '/uts-4', label: 'UTS-4 My SHAPE' },
+  { path: '/uts-5', label: 'UTS-5 My Personal Reviews' },
 ]
+
+const uasLinks = [
+  { path: '/uas-1', label: 'UAS-1 My Concepts' },
+  { path: '/uas-2', label: 'UAS-2 My Opinions' },
+  { path: '/uas-3', label: 'UAS-3 My Innovations' },
+  { path: '/uas-4', label: 'UAS-4 My Knowledge' },
+  { path: '/uas-5', label: 'UAS-5 My Professional Reviews' },
+]
+
+const SunIcon = () => (
+  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <circle cx="12" cy="12" r="5" /><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+  </svg>
+)
+
+const MoonIcon = () => (
+  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+  </svg>
+)
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   const location = useLocation()
+  const { theme, toggleTheme } = useTheme()
   const [isNavOpen, setIsNavOpen] = useState(false)
 
   useEffect(() => {
     setIsNavOpen(false)
   }, [location.pathname])
 
+  const navItem = (path: string, label: string) => {
+    const isActive = location.pathname === path
+    return (
+      <Link key={path} to={path} className={`nav-item${isActive ? ' is-active' : ''}`}>
+        <span className="nav-dot" />
+        {label}
+      </Link>
+    )
+  }
+
   return (
-    <div className="min-h-screen bg-gradient-to-br from-primary-50 via-primary-100 to-primary-200 text-neutral-900">
+    <div style={{ background: 'var(--bg)', minHeight: '100vh', color: 'var(--ink)' }}>
       <div className="relative mx-auto flex min-h-screen w-full flex-col md:flex-row">
         {/* Mobile header */}
-        <header className="sticky top-0 z-30 flex items-center justify-between border-b border-neutral-200 bg-white/90 px-4 py-3 shadow-sm backdrop-blur md:hidden">
-          <div className="flex items-center gap-3">
-            <div>
-              <p className="text-sm font-semibold text-neutral-800">Muhammad Rafi Dhiyaulhaq</p>
-              <p className="text-xs text-neutral-500">Portfolio Asesmen KIPP</p>
-            </div>
+        <header
+          className="sticky top-0 z-30 flex items-center justify-between px-4 py-3 md:hidden"
+          style={{ background: 'var(--panel)', borderBottom: '1px solid var(--border)' }}
+        >
+          <div>
+            <p className="text-sm font-bold" style={{ color: 'var(--ink)' }}>Muhammad Rafi Dhiyaulhaq</p>
+            <p className="eyebrow">Portfolio KIPP</p>
           </div>
-          <button
-            type="button"
-            onClick={() => setIsNavOpen((prev) => !prev)}
-            className="inline-flex items-center justify-center rounded-lg border border-neutral-200 bg-white px-3 py-2 text-neutral-600 shadow-sm transition hover:border-neutral-400 hover:text-neutral-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-neutral-500 focus-visible:ring-offset-2"
-            aria-expanded={isNavOpen}
-            aria-controls="mobile-navigation"
-            aria-label="Toggle navigation"
-          >
-            {isNavOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-          </button>
+          <div className="flex items-center gap-2">
+            <button
+              type="button"
+              onClick={toggleTheme}
+              className="btn btn-outline focus-ring"
+              style={{ padding: '7px', borderRadius: '8px' }}
+              aria-label="Ganti tema"
+            >
+              {theme === 'dark' ? <SunIcon /> : <MoonIcon />}
+            </button>
+            <button
+              type="button"
+              onClick={() => setIsNavOpen((prev) => !prev)}
+              className="btn btn-outline focus-ring"
+              style={{ padding: '7px 10px' }}
+              aria-expanded={isNavOpen}
+              aria-controls="mobile-navigation"
+              aria-label="Buka navigasi"
+            >
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
+                {isNavOpen ? (
+                  <><line x1="2" y1="2" x2="14" y2="14" /><line x1="14" y1="2" x2="2" y2="14" /></>
+                ) : (
+                  <><line x1="1" y1="3" x2="15" y2="3" /><line x1="1" y1="8" x2="15" y2="8" /><line x1="1" y1="13" x2="15" y2="13" /></>
+                )}
+              </svg>
+            </button>
+          </div>
         </header>
 
-        <AnimatePresence initial={false}>
-          {isNavOpen && (
-            <motion.nav
-              id="mobile-navigation"
-              key="mobile-navigation"
-              initial={{ opacity: 0, y: -12 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -12 }}
-              transition={{ duration: 0.2 }}
-              className="md:hidden px-4 pb-4"
-            >
-              <div className="glass-effect rounded-2xl border border-neutral-200 bg-white/95 p-3 shadow-xl">
-                <div className="space-y-2">
-                  {navigation.map((item) => {
-                    const Icon = item.icon
-                    const isActive = location.pathname === item.path
-
-                    return (
-                      <Link
-                        key={item.path}
-                        to={item.path}
-                        className={cn(
-                          'flex items-center gap-3 rounded-xl px-4 py-3 transition-colors',
-                          isActive
-                            ? 'bg-gradient-to-r from-primary-500 to-primary-700 text-white shadow-md'
-                            : 'bg-white/90 text-neutral-600 hover:bg-neutral-100 hover:text-neutral-900'
-                        )}
-                      >
-                        <Icon className="h-5 w-5 flex-shrink-0" />
-                        <span className="text-sm font-medium">{item.label}</span>
-                      </Link>
-                    )
-                  })}
-                </div>
-              </div>
-            </motion.nav>
-          )}
-        </AnimatePresence>
+        {isNavOpen && (
+          <div
+            onClick={() => setIsNavOpen(false)}
+            className="fixed inset-0 z-40 md:hidden"
+            style={{ background: 'rgba(0,0,0,0.4)' }}
+            aria-hidden="true"
+          />
+        )}
 
         {/* Sidebar */}
-        <motion.div
-          initial={{ x: -300 }}
-          animate={{ x: 0 }}
-          transition={{ duration: 0.5, ease: "easeOut" }}
-          className="hidden h-screen w-80 flex-shrink-0 flex-col border-r border-neutral-200 bg-white/95 shadow-xl backdrop-blur-xl glass-effect md:sticky md:top-0 md:flex"
+        <aside
+          className={`app-sidebar${isNavOpen ? ' is-open' : ''} w-72 flex-shrink-0 flex-col md:flex`}
+          style={{
+            display: isNavOpen ? 'flex' : undefined,
+            background: 'var(--panel)',
+            borderRight: '1px solid var(--border)',
+            zIndex: 50,
+          }}
         >
-          <div className="p-8 h-full flex flex-col">
-            <div className="flex items-center gap-3 mb-6">
-              <motion.h1 
-                initial={{ opacity: 0, y: -20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.2 }}
-                className="text-2xl font-bold text-neutral-900 mb-0 bg-gradient-to-r from-primary-500 to-primary-700 bg-clip-text text-transparent"
-              >
+          <div className="flex h-full flex-col p-6">
+            <div className="mb-5">
+              <h1 className="text-xl font-extrabold" style={{ color: 'var(--ink)', letterSpacing: '-0.025em' }}>
                 Muhammad Rafi Dhiyaulhaq
-              </motion.h1>
+              </h1>
+              <p className="mt-1 text-xs font-semibold" style={{ color: 'var(--brand-fill)' }}>
+                Portfolio Asesmen II2100 KIPP
+              </p>
             </div>
-            
-            <nav className="space-y-3 flex-1 overflow-y-auto pr-1">
-              {navigation.map((item, index) => {
-                const Icon = item.icon
-                const isActive = location.pathname === item.path
-                
-                return (
-                  <motion.div
-                    key={item.path}
-                    initial={{ opacity: 0, x: -20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: 0.1 * index }}
-                  >
-                    <Link
-                      to={item.path}
-                      className={cn(
-                        "group flex items-center space-x-3 px-5 py-4 rounded-xl transition-all duration-300 relative overflow-hidden",
-                        isActive
-                          ? "bg-gradient-to-r from-primary-500 to-primary-700 text-white shadow-lg shadow-neutral-500/25"
-                          : "text-neutral-600 hover:bg-neutral-100 hover:text-neutral-900 hover:shadow-md"
-                      )}
-                    >
-                      {isActive && (
-                        <motion.div
-                          layoutId="activeTab"
-                          className="absolute inset-0 bg-gradient-to-r from-primary-500 to-primary-700 rounded-xl"
-                          transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
-                        />
-                      )}
-                      <Icon size={20} className="relative z-10" />
-                      <span className="font-medium relative z-10">{item.label}</span>
-                    </Link>
-                  </motion.div>
-                )
-              })}
+
+            <nav className="flex-1 space-y-1 overflow-y-auto pr-1">
+              {navItem('/', 'Selamat Datang')}
+
+              <div className="eyebrow mt-4 mb-1 px-3">UTS</div>
+              {utsLinks.map((l) => navItem(l.path, l.label))}
+
+              <div className="eyebrow mt-4 mb-1 px-3">UAS</div>
+              {uasLinks.map((l) => navItem(l.path, l.label))}
             </nav>
+
+            <div className="mt-4 flex items-center justify-between gap-3 pt-4" style={{ borderTop: '1px solid var(--border)' }}>
+              <div>
+                <div className="text-xs font-bold" style={{ color: 'var(--ink)' }}>STEI ITB</div>
+                <div className="mono text-[10px]" style={{ color: 'var(--muted)' }}>18222069</div>
+              </div>
+              <button
+                type="button"
+                onClick={toggleTheme}
+                className="btn btn-outline focus-ring"
+                style={{ padding: '7px', borderRadius: '8px' }}
+                aria-label="Ganti tema terang/gelap"
+                title={theme === 'dark' ? 'Mode terang' : 'Mode gelap'}
+              >
+                {theme === 'dark' ? <SunIcon /> : <MoonIcon />}
+              </button>
+            </div>
           </div>
-        </motion.div>
+        </aside>
 
         {/* Main Content */}
         <main className="flex-1">
-          <div className="max-w-7xl mx-auto w-full px-4 py-6 sm:px-6 lg:px-12">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.3 }}
-              className="glass-effect rounded-3xl border border-neutral-200 bg-white/95 p-0 shadow-2xl backdrop-blur-xl md:min-h-[calc(100vh-6rem)]"
-            >
-              <ScrollArea className="rounded-3xl p-5 sm:p-8 lg:p-12">
-                <div className="mx-auto w-full max-w-5xl pb-12">
-                  {children}
-                </div>
-              </ScrollArea>
-            </motion.div>
+          <div className="mx-auto w-full max-w-5xl px-4 py-8 sm:px-6 lg:px-10">
+            {children}
           </div>
         </main>
       </div>

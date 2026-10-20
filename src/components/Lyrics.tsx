@@ -1,5 +1,4 @@
 import React from 'react'
-import { Music } from 'lucide-react'
 
 const sections = [
   {
@@ -63,42 +62,37 @@ const sections = [
 
 const Lyrics: React.FC = () => {
   return (
-    <div className="space-y-6 text-neutral-800">
+    <div className="space-y-6">
       <div className="mb-2 text-center">
-        <h3 className="text-2xl md:text-3xl font-semibold flex items-center justify-center gap-2 text-neutral-900">
-          <Music className="w-6 h-6 text-primary-600" />
-          <span>Lirik Lagu</span>
-        </h3>
-        <p className="mt-1 text-sm text-neutral-500">Better Steps — Struktur lagu dan lirik</p>
+        <h3 className="section-title justify-center"><span className="bar" />Lirik Lagu</h3>
+        <p className="mono mt-2 text-xs" style={{ color: 'var(--muted)' }}>Better Steps · Struktur lagu dan lirik</p>
       </div>
 
-      <div className="grid grid-cols-1 gap-4">
+      <div className="grid grid-cols-1 gap-3">
         {sections.map((s) => (
-          <div key={s.id} className="w-full">
-            <div className="p-4 rounded-lg border border-neutral-200 bg-white shadow-sm">
-              <div className="mb-2 flex items-start gap-4">
-                <div className="w-28 flex-shrink-0">
-                  <h4 className="text-sm font-semibold text-neutral-600">{s.title}</h4>
-                </div>
-                <div className="prose prose-sm max-w-none text-neutral-800">
-                  {s.lines.map((l, i) => (
-                    <p key={i} className={`leading-relaxed mb-1 ${s.isChorus ? 'font-medium' : ''}`}>{l}</p>
-                  ))}
-                </div>
+          <div key={s.id} className="card p-4">
+            <div className="flex items-start gap-4">
+              <div className="w-28 flex-shrink-0">
+                <h4 className="eyebrow">{s.title}</h4>
+              </div>
+              <div>
+                {s.lines.map((l, i) => (
+                  <p key={i} className={`leading-relaxed ${s.isChorus ? 'font-semibold' : ''}`} style={{ color: 'var(--ink2)' }}>{l}</p>
+                ))}
               </div>
             </div>
           </div>
         ))}
 
-        {/* repeat chorus at the end for song structure - left aligned like verses */}
-        <div className="p-4 rounded-lg border border-neutral-200 bg-white shadow-sm">
-          <div className="mb-2 flex items-start gap-4">
+        {/* repeat chorus at the end for song structure */}
+        <div className="card p-4">
+          <div className="flex items-start gap-4">
             <div className="w-28 flex-shrink-0">
-              <h4 className="text-sm font-semibold text-neutral-600">Chorus</h4>
+              <h4 className="eyebrow">Chorus</h4>
             </div>
-            <div className="prose prose-sm max-w-none text-neutral-800">
+            <div>
               {sections.find((x) => x.id === 'chorus')!.lines.map((l, i) => (
-                <p key={i} className="leading-relaxed mb-1 font-medium">{l}</p>
+                <p key={i} className="font-semibold leading-relaxed" style={{ color: 'var(--ink2)' }}>{l}</p>
               ))}
             </div>
           </div>

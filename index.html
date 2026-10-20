@@ -1,15 +1,22 @@
 <!DOCTYPE html>
-<html lang="id" data-theme="rafi">
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
+    <script>
+      try {
+        var saved = localStorage.getItem('rafi-theme');
+        var theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        if (theme === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+      } catch (e) {}
+    </script>
   <link rel="icon" type="image/svg+xml" href="/all-about-me/favicon-v2.svg" />
   <link rel="icon" type="image/svg+xml" sizes="32x32" href="/all-about-me/favicon-32.svg" />
   <link rel="icon" type="image/svg+xml" sizes="16x16" href="/all-about-me/favicon-16.svg" />
   <link rel="apple-touch-icon" href="/all-about-me/favicon-32.svg" />
   <!-- Additional favicon fallbacks and metadata for cross-browser support -->
   <link rel="shortcut icon" href="/all-about-me/favicon-v2.svg" />
-  <link rel="mask-icon" href="/all-about-me/favicon.svg" color="#3f3f46" />
-  <meta name="theme-color" content="#18181b" />
+  <link rel="mask-icon" href="/all-about-me/favicon.svg" color="#EC0A8C" />
+  <meta name="theme-color" content="#1E1E22" />
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
@@ -17,7 +24,7 @@
     <title>Muhammad Rafi Dhiyaulhaq - Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   </head>
   <body>
     <div id="root"></div>
